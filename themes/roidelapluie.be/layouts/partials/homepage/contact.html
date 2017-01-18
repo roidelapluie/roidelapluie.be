@@ -1,0 +1,12 @@
+<section class="section">
+
+    <div class="level">
+{{range .Site.Data.misc.contact}}
+        <div class="level-item has-text-centered">
+{{ $name := index . 0 }}
+{{ $url := index . 1 }}
+<a class="button is-primary" href="{{$url}}">{{$name}}</a>
+</div>
+{{end}}
+</div>
+</section>
