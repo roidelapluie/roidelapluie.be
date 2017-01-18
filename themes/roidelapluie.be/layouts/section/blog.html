@@ -1,0 +1,6 @@
+{{ partial "header.html" . }}
+    {{range .Paginator.Pages}}
+        {{.Render "inlist"}}
+    {{end}}
+    {{ partial "pagination.html" . }}
+{{ partial "footer.html" . }}

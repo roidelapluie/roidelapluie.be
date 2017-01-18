@@ -1,0 +1,15 @@
+<nav class="nav has-shadow">
+    <div class="container">
+        <div class="nav-left">
+            <a class="nav-item" href="/">
+                <strong>roidelapluie</strong>
+            </a>
+            {{ $currentPage := . }}
+            {{ range .Site.Menus.main }}
+            <a class="nav-item is-tab{{ if or ($currentPage.IsMenuCurrent "main" .) ($currentPage.HasMenuCurrent "main" .) }} is-active{{ end }}" href="{{.URL}}">
+                {{.Name}}
+            </a>
+            {{ end }}
+        </div>
+    </div>
+</nav>
