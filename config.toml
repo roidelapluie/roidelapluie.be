@@ -1,3 +1,19 @@
-languageCode = "en-us"
+DefaultContentLanguage = "en"
 title = "roidelapluie"
 baseurl = "https://roidelapluie.be/"
+SectionPagesMenu = "main"
+Paginate = 5
+PygmentsCodeFences = true
+pygmentsstyle = "default"
+
+[Languages]
+[Languages.en]
+[Languages.fr]
+
+[[menu.main]]
+    name = "About me"
+    weight = -900
+    identifier = "homepage"
+    url = "/"
+
+
