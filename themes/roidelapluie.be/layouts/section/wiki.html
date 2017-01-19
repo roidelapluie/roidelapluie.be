@@ -1,0 +1,13 @@
+{{ partial "header.html" . }}
+<section class="section">
+    <div class="container">
+        <h1 class="title">Wiki</h1>
+        <ul>
+        {{range .Data.Pages.ByTitle}}
+        {{.Render "li"}}
+        {{end}}
+        </ul>
+    </div>
+</section>
+{{ partial "footer.html" . }}
+
