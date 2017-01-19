@@ -6,6 +6,8 @@ Paginate = 5
 PygmentsCodeFences = true
 pygmentsstyle = "default"
 
+rssuri = "rss.xml"
+
 [Languages]
 [Languages.en]
 [Languages.fr]
