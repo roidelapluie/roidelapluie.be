@@ -26,6 +26,7 @@ clean:
 
 deploy: clean all
 	cd public && \
+		rm css/.gitignore && \
 		git init && \
 		touch .nojekyll && \
 		git add . && \
