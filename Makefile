@@ -27,6 +27,7 @@ clean:
 deploy: clean all
 	cd public && \
 		git init && \
+		touch .nojekyll && \
 		git add . && \
 		git config user.name "Travis CI" && \
 		git config user.email "travis@roidelapluie.be" && \
