@@ -27,7 +27,7 @@ configuration file and clones every repository. Please note that it takes some
 parameters: `gitBaseUrl`, and `superRepo`. It will clone the repositories in
 multiple threads.
 
-```
+```groovy
 lock('checkout') {
     def checkouts = [:]
     def threads = 8
