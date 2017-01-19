@@ -9,6 +9,9 @@ cleandestinationdir = true
 
 rssuri = "rss.xml"
 
+[permalinks]
+blog = "/blog/:year/:month/:day/:slug/"
+
 [Languages]
 [Languages.en]
 [Languages.fr]
