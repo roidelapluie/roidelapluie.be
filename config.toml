@@ -1,6 +1,6 @@
 DefaultContentLanguage = "en"
 title = "roidelapluie"
-baseurl = "https://roidelapluie.be/"
+baseurl = "https://roidelapluie.github.io/"
 SectionPagesMenu = "main"
 Paginate = 5
 PygmentsCodeFences = true
