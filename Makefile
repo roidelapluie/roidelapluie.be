@@ -5,6 +5,8 @@ all: compile adapt-rss
 
 compile:
 	cp bulma/css/bulma.css themes/roidelapluie.be/static/css
+	cp Font-Awesome/fonts/* themes/roidelapluie.be/static/fonts
+	cp Font-Awesome/css/font-awesome.min.css themes/roidelapluie.be/static/css
 	$(HUGO) -t roidelapluie.be
 
 adapt-rss:
@@ -27,6 +29,7 @@ clean:
 deploy: clean all
 	cd public && \
 		rm css/.gitignore && \
+		rm fonts/.gitignore && \
 		git init && \
 		touch .nojekyll && \
 		git add . && \
