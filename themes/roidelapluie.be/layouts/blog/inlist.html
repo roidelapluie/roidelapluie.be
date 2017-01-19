@@ -1,18 +1,7 @@
 <div class="section">
     <div class="container">
         <div class="box">
-            <div class="title">
-                {{.Title}}
-            </div>
-            <div class="content">
-                {{.Content}}
-            </div>
-            <div class="message">
-                <div class="message-body has-text-centered">
-                    Category: {{range $index, $element := .Params.categories}}{{if $index}} {{end}}{{$element}}{{end}}. Tags: automation planet-inuits puppet.<br/>
-                    First published on {{.Date.Format "Sun 2 December 2006"}}.
-                </div>
-            </div>
+            {{.Render "content"}}
         </div>
     </div>
 </div>

@@ -2,25 +2,20 @@
     <div class="container">
         <nav class="pagination is-centered">
             {{if .Paginator.HasPrev }}
-            {{ .Scratch.Set "prev" .Prev }}
+            {{ $.Scratch.Set "prev" .Prev.URL }}
             {{else}}
-            {{ .Scratch.Set "prev" 0 }}
+            {{ $.Scratch.Set "prev" 0 }}
             {{end}}
             {{if .Paginator.HasNext }}
-            {{ .Scratch.Set "next" .Next }}
+            {{ $.Scratch.Set "next" .Next.URL }}
             {{else}}
-            {{ .Scratch.Set "next" false }}
+            {{ $.Scratch.Set "next" false }}
             {{end}}
-            {{if .Scratch.Get "prev" }}<a class="pagination-previous" href="{{(.Scratch.Get "prev").URL}}">Previous</a>{{end}}
-            {{if .Scratch.Set "next" }}<a class="pagination-next" href="{{(.Scratch.Get "next").URL}}">Next page</a>{{end}}
+            <a class="pagination-previous{{if not .Paginator.HasPrev }} is-disabled{{end}}" {{if .Paginator.HasPrev }}href="{{.Paginator.Prev.URL}}"{{end}}>Previous</a>
+            <a class="pagination-next{{if not .Paginator.HasNext }} is-disabled{{end}}" {{if .Paginator.HasNext }}href="{{.Paginator.Next.URL}}"{{end}}>Next page</a>
             <ul class="pagination-list">
-                {{ $ := . }}
                 {{ range .Paginator.Pagers }}
-                {{ $next := $.Scratch.Get "next" }}
-                {{ $prev := $.Scratch.Get "prev" }}
-                {{ if or $next (eq $next.Paginator.PageNumber .PageNumber) }}
                 <li><a class="pagination-link{{ if eq $.Paginator.PageNumber .PageNumber }} is-current{{end}}" href="{{.URL}}">{{ .PageNumber }}</a></li>
-                {{ end }}
                 {{ end }}
             </ul>
         </nav>
