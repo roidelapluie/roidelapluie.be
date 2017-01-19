@@ -1,0 +1,28 @@
+<div class="card">
+    <header class="card-header">
+        <p class="card-header-title">
+        {{.Date.Format "Mon 2 December 2006 15:04:05 MST"}}
+        </p>
+        <a class="card-header-icon is-dark" href="{{.URL}}">
+            <span class="icon">
+                <i class="fa fa-link"></i>
+            </span>
+        </a>
+    </header>
+    <div class="card-content">
+        <div class="content">
+            {{.Content}}
+        </div>
+    </div>
+        {{ if .Params.links }}
+    <footer class="card-footer">
+        {{ range .Params.links }}
+        <a class="card-footer-item" href="{{.}}">
+            <span class="icon">
+                <i class="fa fa-external-link is-info"></i>
+            </span>
+        </a>
+        {{ end }}
+        {{ end }}
+    </footer>
+</div>

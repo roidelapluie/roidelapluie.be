@@ -1,0 +1,11 @@
+{{ partial "header.html" . }}
+<section class="section">
+    <div class="container">
+        <h1 class="title">Logbook</h1>
+        {{range (.Paginator 20).Pages}}
+        {{.Render "inlist"}}
+        {{end}}
+        {{ partial "pagination.html" . }}
+    </div>
+</section>
+{{ partial "footer.html" . }}
