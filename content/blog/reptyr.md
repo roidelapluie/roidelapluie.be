@@ -5,6 +5,7 @@ categories = ["Linux"]
 tags = ["sysadmin", "screen", "planet-inuits"]
 slug = "reptyr"
 date = "2013-06-25T22:15:13"
+aliases = ["/reptyr.html"]
 +++
 
 [Reptyr](https://github.com/nelhage/reptyr) is a small project written in C that enable you to "re-pty" your process. It means you can, for example, attach a running process inside a screen.

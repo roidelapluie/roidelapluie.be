@@ -5,6 +5,7 @@ categories = ["Automation"]
 tags = ["centos", "automation", "planet-inuits", "puppet"]
 slug = "puppet-350-yumrepo"
 date = "2014-04-11T09:51:14"
+aliases = ["/puppet-350-yumrepo.html"]
 +++
 
 Dear puppet users using a yum-based distribution, if you use the Yumrepo resource type,

@@ -5,6 +5,7 @@ categories = ["Monitoring"]
 tags = ["grok", "logstash", "planet-inuits"]
 slug = "grok-httpd"
 date = "2013-06-17T12:13:20"
+aliases = ["/grok-httpd.html"]
 +++
 
 When you use the [`LogFormat`](http://httpd.apache.org/docs/current/mod/mod_log_config.html) parameter in you apache configuration, you may want to use the same logformat in logstash.

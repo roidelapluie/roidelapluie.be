@@ -5,6 +5,7 @@ categories = ["Linux"]
 tags = ["mysql", "HA", "planet-inuits"]
 slug = "pt-heartbeat-array-error"
 date = "2014-05-19T22:54:08"
+aliases = ["/pt-heartbeat-array-error.html"]
 +++
 
 Today I got a strange issue with [`pt-heartbeat`](http://www.percona.com/doc/percona-toolkit/2.2/pt-heartbeat.html).

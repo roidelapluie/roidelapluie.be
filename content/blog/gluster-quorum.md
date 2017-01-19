@@ -5,6 +5,7 @@ categories = ["Linux"]
 tags = ["GlusterFS", "planet-inuits"]
 slug = "glusterfs-quorum"
 date = "2013-07-18T15:27:11"
+aliases = ["/glusterfs-quorum.html"]
 +++
 
 [GlusterFS](http://gluster.org) quorums should prevent brain-split by deactivating the nodes when less that 50% of the servers are connected (you can change that number).

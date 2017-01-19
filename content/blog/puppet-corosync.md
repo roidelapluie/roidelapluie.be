@@ -5,6 +5,7 @@ categories = ["Automation"]
 tags = ["centos", "automation", "HA", "planet-inuits", "puppet"]
 slug = "puppetlabs-corosync-pcs"
 date = "2014-07-02T08:32:42"
+aliases = ["/puppetlabs-corosync-pcs.html"]
 +++
 
 Great news for people using an el-based distribution and the [puppetlabs-corosync](https://github.com/puppetlabs/puppetlabs-corosync)

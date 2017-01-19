@@ -5,6 +5,7 @@ categories = ["Open-Source"]
 tags = ["licenses", "philosophy", "planet-inuits"]
 slug = "open-source-matters"
 date = "2013-10-28T21:59:54"
+aliases = ["/open-source-matters.html"]
 +++
 
 I see a lot of people working in the Open-Source world, defending the Open-Source and besides that, using a lot of closed source applications.

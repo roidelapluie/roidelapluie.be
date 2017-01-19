@@ -5,6 +5,7 @@ categories = ["Automation"]
 tags = ["high availability", "linux", "planet-inuits"]
 slug = "puppet-corosync-pcs"
 date = "2014-01-28T20:40:19"
+aliases = ["/puppet-corosync-pcs.html"]
 +++
 
 Since the release 6.4, el-based distributions are not shipped with the `crm` command
