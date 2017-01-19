@@ -5,6 +5,7 @@ SectionPagesMenu = "main"
 Paginate = 5
 PygmentsCodeFences = true
 pygmentsstyle = "default"
+cleandestinationdir = true
 
 rssuri = "rss.xml"
 
