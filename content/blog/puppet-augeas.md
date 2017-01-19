@@ -13,7 +13,6 @@ Without that, Augeas will autoload all of the files defined in its lenses. On an
 
 Here is my base test file:
 
-    :::puppet
     $logrotate_file = '/etc/logrotate.d/httpd'
     augeas {
      'logrotate-httpd':
@@ -27,14 +26,12 @@ Here is my base test file:
 
 It takes 0.91 seconds:
 
-    :::text
     # puppet apply test.pp
     Notice: Compiled catalog for localhost in environment production in 0.14 seconds
     Notice: Finished catalog run in 0.91 seconds
 
 If I specify the file and the lens:
 
-    :::puppet
     $logrotate_file = '/etc/logrotate.d/httpd'
     augeas {
      'logrotate-httpd':
@@ -50,7 +47,6 @@ If I specify the file and the lens:
 
 It takes 0.08 seconds:
 
-    :::text
     # puppet apply test.pp
     Notice: Compiled catalog for localhost in environment production in 0.13 seconds
     Notice: Finished catalog run in 0.08 seconds

@@ -14,7 +14,6 @@ The problem was that I had in `/usr/lib64` files timestamped in the future.
 
 The following command fixed it and I have eventually compiled my library in 30 seconds.
 
-    :::bash
     touch now
     find /usr/lib64 -newer now -exec touch ´{}´ ´;´
 

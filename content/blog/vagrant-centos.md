@@ -42,7 +42,6 @@ For the moment it is only for CentOS 7. As [CentOS 7.1507 has been released][150
 those boxes to be updated soon.
 
 
-    :::bash
     vagrant init centos/7
     vagrant up
 

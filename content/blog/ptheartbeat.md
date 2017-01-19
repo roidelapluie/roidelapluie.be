@@ -12,14 +12,12 @@ Today I got a strange issue with [`pt-heartbeat`](http://www.percona.com/doc/per
 
 When I launched `pt-heartbeat`:
 
-    :::bash
     pt-heartbeat --pid /var/opt/inu/pt-heartbeat.pid --update --database \
       pth --create-table --socket /var/opt/inu/mysql/mysql.sock --user=pth \
       --password=str0ng
 
 I got the following error message:
 
-    :::text
     Can't use an undefined value as an ARRAY reference at
       /usr/bin/pt-heartbeat line 4297.
 
@@ -32,5 +30,4 @@ it. I have found it out by using `strace -e trace=file`.
 Just removing the file solved the problem (of course the first `pt-heartbeat`
 daemon was not running anymore).
 
-    :::bash
     rm /tmp/percona-version-check

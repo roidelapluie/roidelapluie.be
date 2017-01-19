@@ -37,25 +37,21 @@ It is successful.
 
 And, first try to add the new node to the cluster will be a failure:
 
-    :::bash
     srv02$ sudo gluster volume add-brick gv0 192.168.1.12:/export/brick1/sdb1
     volume add-brick: failed: Incorrect number of bricks supplied 1 with count 2
 
 When I created the volume, I set the replica value to 2, so I guess Gluster wants me to add "bricks" two by two. Instead, I am going to update the replica value.
 
-    :::bash
     srv02$ sudo gluster volume add-brick gv0 replica 3 192.168.1.12:/export/brick1/sdb1
     volume add-brick: success
 
 Are the file replicated on the third node? Not yet.
 
-    :::bash
     srv03$ ls /export/brick1/sdb1/ | wc -l
     0
 
 But, the first time I list the files in the **mounted** volume, the files are replicated:
 
-    :::bash
     srv01$ ls /mnt|wc -l
     125
 

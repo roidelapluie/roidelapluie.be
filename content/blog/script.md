@@ -14,12 +14,10 @@ package of Linux distros, and so available almost everywhere, it has some very i
 
 This is the primary usage. Just type:
 
-    :::text
     script output.txt
 
 A new shell will open, and you can just do whatever you want.
 
-    :::text
     $ script output.txt
     Script started, file is output.txt
     $ echo hello world
@@ -33,7 +31,6 @@ finished, you close the shell (`exit` or `^D`) and then you can replay your sess
 with `cat`:
 
 
-    :::text
     $ cat output.txt
     Script started on Sat 04 Jul 2015 11:15:15 AM CEST
     $ echo hello world
@@ -47,12 +44,10 @@ It also records what you type, your bash PS1 etc...
 But that would replay everything at once. You can improve that by recording with
 timing (`-t`). Timing information is sent do stderr.
 
-    :::text
     script -t output.txt 2>output.txt.timing
 
 You can then replay easily with:
 
-    :::text
     scriptreplay output.txt.timing output.txt
 
 `scriptreplay` has a lot of interesting options, like `--divisor` and
@@ -62,7 +57,6 @@ You can then replay easily with:
 
 It is also possible to stream what you are doing. To do so, you can use a named pipe.
 
-    :::text
     mkfifo /tmp/mystream
     script -f /tmp/mystream
 
@@ -70,7 +64,6 @@ The `-f` option means 'flush at every write'.
 
 On the other hand, the person that wants to see what you are doing just has to run:
 
-    :::text
     cat /tmp/mystream
 
 Now you will see the same things.
@@ -85,14 +78,12 @@ you have to 'own' your own tty.
 
 Examples of such situations include `screen` and `sudo` commands.
 
-    :::text
     # su - roidelapluie
     $ screen
     Cannot open your terminal '/dev/pts/38' - please check.
 
 In that case, script can help you:
 
-    :::text
     # su - roidelapluie
     $ script /dev/null
     Script started, file is /dev/null
@@ -103,7 +94,6 @@ It also works to run `sudo` when you forget to use `ssh -t`.
 You can also run a command directly with `-c`. In that case do not forget to add
 `-e` if you are interested by the exit code of the command you launch.
 
-    :::text
     script -c mycommand -e
 
 ## Conclusion

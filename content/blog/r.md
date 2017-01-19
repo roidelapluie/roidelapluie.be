@@ -11,7 +11,6 @@ date = "2015-05-13T01:45:07"
 has a large ecosystem and today I wanted to try to do some predictions with R and
 Graphite.
 
-    :::R
     library("rjson")
     library("RCurl")
     library("forecast")

@@ -11,14 +11,12 @@ Here is an awesome trick for people using git submodules:
 
 In your `~/.gitconfig`, add the following snippet:
 
-    :::ini
     [status]
         submodulesummary = true
 
 
 You should now get more information when running git status (`>` new commits, `<` 'removed' commits):
 
-    :::text
     On branch master
     Changes to be committed:
       (use "git reset HEAD <file>..." to unstage)
