@@ -10,5 +10,6 @@ before_install:
 - ssh-add deploy_key
 install:
 - make install
+- pip install Pygments
 script:
 - make deploy
