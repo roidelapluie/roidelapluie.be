@@ -5,6 +5,7 @@ categories = ["Linux"]
 tags = ["GlusterFS", "planet-inuits"]
 slug = "glusterfs-split-brain"
 date = "2013-07-17T16:27:17"
+aliases = ["/glusterfs-split-brain.html"]
 +++
 
 I have found some time to test [GlusterFS](http://gluster.org), in order to use it to replicate data between several servers.

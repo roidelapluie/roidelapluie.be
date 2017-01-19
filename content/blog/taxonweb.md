@@ -5,6 +5,7 @@ categories = ["Linux"]
 tags = ["belgium", "planet-inuits"]
 slug = "tax-on-web"
 date = "2013-07-15T21:52:50"
+aliases = ["/tax-on-web.html"]
 +++
 
 Tax-on-web is the online service that enable you to fill in your Belgian tax form.

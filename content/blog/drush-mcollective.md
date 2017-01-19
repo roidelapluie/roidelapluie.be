@@ -5,6 +5,7 @@ categories = ["Linux"]
 tags = ["sysadmin", "drupal", "planet-inuits"]
 slug = "drush-mcollective"
 date = "2013-07-23T13:09:07"
+aliases = ["/drush-mcollective.html"]
 +++
 
 I have written a [mcollective](https://puppetlabs.com/mcollective/) agent to run [drush](http://drush.ws) commands. It will help you to automate the deployments of your drupal websites.

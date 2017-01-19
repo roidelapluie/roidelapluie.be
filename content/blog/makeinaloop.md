@@ -5,6 +5,7 @@ categories = ["Linux"]
 tags = ["exherbo", "planet-inuits"]
 slug = "make-in-a-loop"
 date = "2014-01-20T08:44:57"
+aliases = ["/make-in-a-loop.html"]
 +++
 
 I got an unexpected result when I was trying to compile a small lib: it seems to never finished (I stopped it after 3 hours).

@@ -5,6 +5,7 @@ categories = ["Linux"]
 tags = ["GlusterFS", "planet-inuits"]
 slug = "peering-a-server-to-a-glusterfs-cluster"
 date = "2013-07-18T13:46:57"
+aliases = ["/peering-a-server-to-a-glusterfs-cluster.html"]
 +++
 
 Some notes about how to add server to a [GlusterFS](http://gluster.org) cluster and to replicata data to it.

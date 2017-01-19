@@ -5,6 +5,7 @@ categories = ["Linux"]
 tags = ["hardware", "planet-inuits"]
 slug = "lenovo-touchpad"
 date = "2014-01-22T07:38:18"
+aliases = ["/lenovo-touchpad.html"]
 +++
 
 I have a new lenovo laptop but it has no physical button (the whole touchpad is

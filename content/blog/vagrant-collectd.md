@@ -5,6 +5,7 @@ categories = ["Linux"]
 tags = ["vagrant", "monitoring", "collectd", "planet-inuits"]
 slug = "vagrant-collectd"
 date = "2014-04-08T13:01:44"
+aliases = ["/vagrant-collectd.html"]
 +++
 
 In the list of the things I like, there are [vagrant](http://vagrantup.com), RPM's

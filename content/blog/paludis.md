@@ -5,6 +5,7 @@ categories = ["Linux"]
 tags = ["exherbo", "packaging", "planet-inuits"]
 slug = "paludis"
 date = "2014-02-02T21:24:44"
+aliases = ["/paludis.html"]
 +++
 
 This weekend, the [Fosdem](http://fosdem.org) was still full of geeks and a lot of

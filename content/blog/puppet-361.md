@@ -5,6 +5,7 @@ categories = ["Automation"]
 tags = ["centos", "automation", "planet-inuits", "puppet"]
 slug = "puppet-361-depreciation"
 date = "2014-05-26T10:48:41"
+aliases = ["/puppet-361-depreciation.html"]
 +++
 
 Dear puppet users using a yum-based distribution[^1], once you will upgrade to [puppet 3.6.1](http://docs.puppetlabs.com/puppet/3.6/reference/release_notes.html),

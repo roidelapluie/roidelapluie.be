@@ -5,6 +5,7 @@ categories = ["Automation"]
 tags = ["foreman", "puppet", "automation", "planet-inuits"]
 slug = "lab0"
 date = "2014-03-14T08:50:37"
+aliases = ["/lab0.html"]
 +++
 
 I have written a small frontend to [Foreman](http://theforeman.org) and its [Puppet](https://puppetlabs.com/puppet/puppet-open-source) integration.
