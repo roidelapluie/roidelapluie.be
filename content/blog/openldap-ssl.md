@@ -14,7 +14,6 @@ OpenLDAP in CentOS 6 is built with NSS to deal with ssl/tls.
 
 When you try to securely connect to a LDAP host that, you will get the following errors:
 
-    :::text
     $ ldapsearch -H ldaps://172.28.5.5 -d -1
     [...snip...]
     TLS: certificate [CN=ldap.inuits.eu,OU=Infra,O=Inuits,ST=Antwerp,C=BE] is
@@ -36,7 +35,6 @@ The first step is to get you CA certificates. For this post, let's assume that t
 
 If the certificate is in DES we will first need to convert it into PEM. This is optional if the certificate is already in a PEM format.
 
-    :::bash
     openssl x509 -text -in rootCA.crt -inform des -outform pem > rootCA.pem
 
 Once you have the certificat in PEM, you will need to compute the hash:
@@ -49,12 +47,10 @@ You will get a hash, e.g `e6adf2fd`.
 
 Move the certificate to the right directory, with the name `${hash}.0`:
 
-    :::bash
     mv rootCA.prm /etc/openldap/cacerts/e6adf2fd.0
 
 When you will to your LDAP search again with -1, you should see that the certificate is shown:
 
-    :::text
     $ ldapsearch -H ldaps://172.28.5.5 -d -1
     [...snip...]
     TLS: loaded CA certificate file /etc/openldap/cacerts/e6adf2fd.0

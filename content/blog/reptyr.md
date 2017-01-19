@@ -14,7 +14,6 @@ For example, you launched irssi outside your screen, and you do not want to rela
 
 Install reptyr, then, in a screen, run the following commands:
 
-    :::bash
     $ pidof irssi
     27518
     $ reptyr 27518

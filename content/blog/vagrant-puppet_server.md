@@ -9,7 +9,6 @@ date = "2014-09-17T10:08:31"
 
 This is a small tip for everyone using the [vagrant puppet_server provisioner](https://docs.vagrantup.com/v2/provisioning/puppet_agent.html), which allows you to run a puppet agent inside your vagrant box:
 
-    :::ruby
     Vagrant.configure("2") do |config|
       config.vm.box = "vStone/centos-6.x-puppet.3.x"
       config.vm.hostname = "puppet.vagrant.inuits.eu"

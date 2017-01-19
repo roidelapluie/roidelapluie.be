@@ -29,7 +29,6 @@ of those files il a more clever way than just templating the whole file.
 
 Here is how to create a directory in /run in CentOS 6:
 
-    :::puppet
     file {
       '/run/maria':
         ensure => directory,
@@ -37,7 +36,6 @@ Here is how to create a directory in /run in CentOS 6:
 
 And in CentOS 7 + my augeas lens:
 
-    :::puppet
     augeas {
       "tmpfiles.d-new-${path}":
         changes => [
