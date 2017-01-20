@@ -1,15 +1,18 @@
-<nav class="nav has-shadow">
+<nav class="navbar navbar-toggleable-md navbar-light bg-faded">
     <div class="container">
-        <div class="nav-left">
-            <a class="nav-item" href="/">
-                <strong>roidelapluie</strong>
-            </a>
-            {{ $currentPage := . }}
-            {{ range .Site.Menus.main }}
-            <a class="nav-item is-tab{{ if or ($currentPage.IsMenuCurrent "main" .) ($currentPage.HasMenuCurrent "main" .) }} is-active{{ end }}" href="{{.URL}}">
-                {{.Name}}
-            </a>
-            {{ end }}
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <h1 class="navbar-brand mb-0" href="/">roidelapluie</h1>
+        {{ $currentPage := . }}
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <div class="navbar-nav">
+                {{ range .Site.Menus.main }}
+                    <a class="nav-item nav-link {{ if or ($currentPage.IsMenuCurrent "main" .) ($currentPage.HasMenuCurrent "main" .) }} active{{ end }}" href="{{.URL}}">
+                        {{.Name}}
+                    </a>
+                {{ end }}
+            </div>
         </div>
     </div>
 </nav>

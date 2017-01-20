@@ -1,12 +1,10 @@
-<section class="section">
-
-    <div class="level">
+<ul class="nav nav-pills justify-content-center mt-3 mb-3">
 {{range .Site.Data.misc.contact}}
-        <div class="level-item has-text-centered">
+  <li class="nav-item">
 {{ $name := index . 0 }}
 {{ $url := index . 1 }}
-<a class="button is-primary" href="{{$url}}">{{$name}}</a>
-</div>
+<a class="nav-link bg-info text-white mr-2 ml-2" href="{{$url}}">{{$name}}</a>
+</li>
 {{end}}
-</div>
+</ul>
 </section>

@@ -1,19 +1,17 @@
 HUGO_VERSION ?= 0.18.1
+BOOTSTRAP_VERSION ?= 4.0.0-alpha.6
 HUGO ?= ./hugo-bin
+JQUERY_VERSION ?= 3.1.1
 
 all: compile adapt-rss
 
 compile:
-	cp bulma/css/bulma.css themes/roidelapluie.be/static/css
-	cp Font-Awesome/fonts/* themes/roidelapluie.be/static/fonts
-	cp Font-Awesome/css/font-awesome.min.css themes/roidelapluie.be/static/css
 	$(HUGO) -t roidelapluie.be
 
 adapt-rss:
 	./adapt-rss.sh
 
 serve:
-	cp bulma/css/bulma.css themes/roidelapluie.be/static/css
 	$(HUGO) serve -t roidelapluie.be
 
 install:
@@ -22,6 +20,12 @@ install:
 	mv hugo_$(HUGO_VERSION)_linux_amd64/hugo_$(HUGO_VERSION)_linux_amd64 hugo-bin
 	rmdir hugo_$(HUGO_VERSION)_linux_amd64
 	chmod +x hugo-bin
+	wget https://github.com/twbs/bootstrap/releases/download/v$(BOOTSTRAP_VERSION)/bootstrap-$(BOOTSTRAP_VERSION)-dist.zip
+	unzip bootstrap-$(BOOTSTRAP_VERSION)-dist.zip
+	cp -rv bootstrap-$(BOOTSTRAP_VERSION)-dist/css/* themes/roidelapluie.be/static/css
+	cp -rv bootstrap-$(BOOTSTRAP_VERSION)-dist/js/* themes/roidelapluie.be/static/js
+	wget -O themes/roidelapluie.be/static/js/jquery.min.js https://code.jquery.com/jquery-$(JQUERY_VERSION).min.js
+	wget -O themes/roidelapluie.be/static/js/jquery.min.map https://code.jquery.com/jquery-$(JQUERY_VERSION).min.map
 
 clean:
 	rm -rf public
@@ -30,6 +34,7 @@ deploy: clean all
 	cd public && \
 		rm css/.gitignore && \
 		rm fonts/.gitignore && \
+		rm js/.gitignore && \
 		git init && \
 		touch .nojekyll && \
 		git add . && \

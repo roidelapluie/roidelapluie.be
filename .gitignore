@@ -2,3 +2,10 @@ public
 hugo-bin
 deploy_key
 hugo_*_Linux-64bit.tar.gz
+bootstrap*.css
+bootstrap*.js
+bootstrap*.map
+jquery-*.js
+jquery-*.map
+*.zip
+*.tar.gz
