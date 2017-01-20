@@ -5,9 +5,10 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         {{.Hugo.Generator}}
 
-        <link rel="stylesheet" href="{{ "css/bulma.css" | relURL }}">
-        <link rel="stylesheet" href="{{ "css/font-awesome.min.css" | relURL }}">
+        <link rel="stylesheet" href="{{ "css/bootstrap.min.css" | relURL }}">
         <title>roidelapluie</title>
     </head>
-    <body>
-    {{partial "menu.html" .}}
+    <body class="bg-faded">
+        {{partial "menu.html" .}}
+        <div style="background-color:white">
+        <div class="container pt-3 pb-3">

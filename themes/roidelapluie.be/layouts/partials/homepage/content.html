@@ -1,15 +1,13 @@
-<div class="container">
-    <div class="columns">
-        <div class="column">
-            {{range (where (where .Site.Pages.ByWeight "Type" "homepage") ".Params.location" "main") }}
-            {{.Render "main"}}
-            {{end}}
-            {{ partial "homepage/contact.html" . }}
-        </div>
-        <div class="column is-one-quarter">
-            {{range (where (where .Site.Pages.ByWeight "Type" "homepage") ".Params.location" "sidebar") }}
-            {{.Render "sidebar"}}
-            {{end}}
-        </div>
+<div class="row">
+    <div class="col-md col-md-9">
+        {{range (where (where .Site.Pages.ByWeight "Type" "homepage") ".Params.location" "main") }}
+        {{.Render "main"}}
+        {{end}}
+        {{ partial "homepage/contact.html" . }}
+    </div>
+    <div class="col-md col-md-3 mt-md-3">
+        {{range (where (where .Site.Pages.ByWeight "Type" "homepage") ".Params.location" "sidebar") }}
+        {{.Render "sidebar"}}
+        {{end}}
     </div>
 </div>
