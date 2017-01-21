@@ -3,6 +3,7 @@
         {{range (where (where .Site.Pages.ByWeight "Type" "homepage") ".Params.location" "main") }}
         {{.Render "main"}}
         {{end}}
+        {{ partial "homepage/talks.html" . }}
         {{ partial "homepage/contact.html" . }}
     </div>
     <div class="col-md col-md-3 mt-md-3 text-justify">
