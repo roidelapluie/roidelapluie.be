@@ -1,4 +1,4 @@
-<nav class="navbar navbar-toggleable-md navbar-light bg-faded container">
+<div class="bg-primary"><nav class="navbar navbar-toggleable-md navbar-inverse bg-primary container">
         <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
@@ -7,10 +7,11 @@
         <div class="collapse navbar-collapse" id="navbarNav">
             <div class="navbar-nav">
                 {{ range .Site.Menus.main }}
-                    <a class="nav-item nav-link {{ if or ($currentPage.IsMenuCurrent "main" .) ($currentPage.HasMenuCurrent "main" .) }} active{{ end }}" href="{{.URL}}">
+                <a class="nav-item nav-link {{ if or ($currentPage.IsMenuCurrent "main" .) ($currentPage.HasMenuCurrent "main" .) }} active{{ end }}" href="{{.URL}}">
                         {{.Name}}
                     </a>
                 {{ end }}
             </div>
         </div>
 </nav>
+</div>
