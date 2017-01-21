@@ -1,9 +1,9 @@
-<ul class="nav nav-pills justify-content-center mt-3 mb-3">
+<ul class="nav nav-pills justify-content-center flex-md-row flex-column mb-3">
 {{range .Site.Data.misc.contact}}
-  <li class="nav-item">
+  <li class="nav-item justify-content-center d-inline-flex">
 {{ $name := index . 0 }}
 {{ $url := index . 1 }}
-<a class="nav-link bg-info text-white mr-2 ml-2" href="{{$url}}">{{$name}}</a>
+<a class="nav-link bg-info text-white m-2" href="{{$url}}">{{$name}}</a>
 </li>
 {{end}}
 </ul>
