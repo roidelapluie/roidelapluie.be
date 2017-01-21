@@ -91,7 +91,7 @@ What is still to be done? We do not delete repositories that disappear from the
 
 Here is the result:
 
-![GitSlave in Jenkins Pipeline](|filename|/images/jenkins-bo-gitslave.png)
+{{<img alt="GitSlave in Jenkins Pipeline" src="/images/jenkins-bo-gitslave.png">}}
 
 PS: GitSlave is named GitSlave. I do not like the name -- and kudos to the
 Jenkins team to drop the Master/Slave terminology as part of the Jenkins 2.0

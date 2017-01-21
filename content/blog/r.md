@@ -43,7 +43,7 @@ Graphite.
 
 Result:
 
-![R and Graphite](|filename|/images/r.png)
+{{<img alt="R and Graphite" src="/images/r.png">}}
 
 This POC could be improved of course, it was just to make some fun with R and predictions.
 
