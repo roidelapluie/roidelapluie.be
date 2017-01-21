@@ -1,19 +1,8 @@
 <div class="mt-3 mb-3 card">
     <div class="card-block">
-    <div class="card-text">
-        {{.Content}}
-    </div>
-        <div class="card-text text-muted">
-        {{.Date.Format "Mon 2 January 2006 15:04:05 MST"}}
+        <div class="card-text">
+            {{.Content}}
         </div>
-        <a class="card-header-icon is-dark" href="{{.URL}}">
-            <span class="icon">
-                <i class="fa fa-link"></i>
-            </span>
-        </a>
-        <a class="card-link" href="{{.URL}}">
-            Permalink
-        </a>
         {{ if .Params.links }}
         {{ range .Params.links }}
         <a class="card-link" href="{{.}}">
@@ -21,5 +10,12 @@
         </a>
         {{ end }}
         {{ end }}
+        <div>
+            <a class="text-muted" href="{{.URL}}">
+                <small>
+                    {{.Date.Format "Mon 2 January 2006 15:04:05 MST"}}
+                </small>
+            </a>
+        </div>
     </div>
 </div>
