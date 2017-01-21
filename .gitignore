@@ -9,3 +9,4 @@ jquery-*.js
 jquery-*.map
 *.zip
 *.tar.gz
+.sass-cache
