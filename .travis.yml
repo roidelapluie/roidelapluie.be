@@ -14,6 +14,7 @@ before_install:
 - chmod 600 deploy_key
 - ssh-add deploy_key
 install:
+- cp _custom.scss bootstrap/scss/_custom.scss
 - cd bootstrap
 - nvm install 4
 - npm install -g npm@3
@@ -27,6 +28,8 @@ install:
 - grunt
 - ls -ltr dist
 - cd ..
+- cp -rv bootstrap/dist/css/* themes/roidelapluie.be/static/css
+- cp -rv bootstrap/dist/js/* themes/roidelapluie.be/static/js
 - make install
 - pip install Pygments
 script:
