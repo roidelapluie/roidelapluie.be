@@ -16,6 +16,7 @@ before_install:
 install:
 - cd bootstrap
 - nvm install 4
+- npm install -g npm@3
 - node --version
 - npm --version
 - nvm --version
