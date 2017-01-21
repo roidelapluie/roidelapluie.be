@@ -7,6 +7,6 @@ location = "sidebar"
 +++
 
 
-The opinions and views expressed in my this site do not reflect my employer's
+The opinions and views expressed on this site do not reflect my employer's
 views. I am working at Inuits, a large open-source consultancy company based in
 Belgium.
