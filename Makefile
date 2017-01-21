@@ -15,6 +15,7 @@ serve:
 	$(HUGO) serve -t roidelapluie.be
 
 install:
+	sudo apt-get install python3-pygments
 	wget https://github.com/spf13/hugo/releases/download/v$(HUGO_VERSION)/hugo_$(HUGO_VERSION)_Linux-64bit.tar.gz
 	tar xvf hugo_$(HUGO_VERSION)_Linux-64bit.tar.gz hugo_$(HUGO_VERSION)_linux_amd64/hugo_$(HUGO_VERSION)_linux_amd64
 	mv hugo_$(HUGO_VERSION)_linux_amd64/hugo_$(HUGO_VERSION)_linux_amd64 hugo-bin
