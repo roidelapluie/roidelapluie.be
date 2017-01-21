@@ -1,0 +1,12 @@
+<li>
+    {{.Date.Format "January 2"}},
+    {{if .Params.eventurl}}<a href="{{.Params.eventurl}}">{{end -}}
+        {{- .Params.event -}}
+    {{- if .Params.eventurl}}</a>{{end }},
+    {{if .Params.city}}{{.Params.city}}, {{end}}
+    {{if .Params.city}}{{.Params.country}}, {{end}}
+    {{if .Params.slidesurl}}<a href="{{.Params.slidesurl}}">{{end -}}
+        {{.Title}}
+    {{- if .Params.slidesurl}}</a>{{end }}
+    {{if .Params.video}} (<a href="{{.Params.video}}">video</a>){{end -}}
+</li>

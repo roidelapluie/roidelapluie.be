@@ -1,0 +1,12 @@
+<h1>Talks</h1>
+
+{{ range ((where .Site.Pages.ByWeight "Type" "talk").GroupByDate "2006")  }}
+{{range first 1 .Pages}}
+<h2 class="mb-2 mt-3">{{.Date.Format "2006"}}</h2>
+{{end}}
+<ul class="list-unstyled">
+{{range .Pages}}
+{{.Render "li"}}
+{{end}}
+</ul>
+{{end}}
