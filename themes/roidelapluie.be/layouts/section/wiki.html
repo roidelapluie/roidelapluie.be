@@ -1,6 +1,6 @@
 {{ partial "header.html" . }}
 <h1 class="title">Wiki</h1>
-<ul>
+<ul  class="list-unstyled">
     {{range .Data.Pages.ByTitle}}
     {{.Render "li"}}
     {{end}}
