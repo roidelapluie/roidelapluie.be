@@ -13,9 +13,12 @@ before_install:
 - chmod 600 deploy_key
 - ssh-add deploy_key
 install:
-- cd bootstrap;bundle install --deployment --jobs=3 --retry=3
-- cd bootstrap;cp grunt/npm-shrinkwrap.json ./
-- cd bootstrap;npm install
+- cd bootstrap
+- nvm install 4
+- bundle install --deployment --jobs=3 --retry=3
+- cp grunt/npm-shrinkwrap.json ./
+- npm install
+- cd ..
 - make install
 - pip install Pygments
 script:
