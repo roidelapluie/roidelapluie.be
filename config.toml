@@ -6,6 +6,7 @@ Paginate = 5
 PygmentsCodeFences = true
 pygmentsstyle = "default"
 cleandestinationdir = true
+theme = "roidelapluie.be"
 
 rssuri = "rss.xml"
 
