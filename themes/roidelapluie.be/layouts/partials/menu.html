@@ -7,7 +7,7 @@
         <div class="collapse navbar-collapse" id="navbarNav">
             <div class="navbar-nav">
                 {{ range .Site.Menus.main }}
-                {{ if not (eq .Name "Talk") }}
+                {{ if not (in $.Site.Data.misc.menu.excluded.excluded .Name) }}
                 <a class="nav-item nav-link {{ if or ($currentPage.IsMenuCurrent "main" .) ($currentPage.HasMenuCurrent "main" .) }} active{{ end }}" href="{{.URL}}">
                         {{.Name}}
                     </a>

@@ -1,5 +1,6 @@
 [
     ["Email", "mailto:roidelapluie@inuits.eu", "primary"],
+    ["GPG", "/gpg/", "primary"],
     ["Twitter", "https://twitter.com/roidelapluie", "primary"],
     ["Github", "https://github.com/roidelapluie", "primary"],
     ["SlideShare", "https://slideshare.net/roidelapluie", "primary"],
