@@ -1,5 +1,5 @@
 <li>
-    {{.Date.Format "January 2"}},
+    {{ i18n (.Date.Format "January") (.Date)}},
     {{if .Params.eventurl}}<a href="{{.Params.eventurl}}">{{end -}}
         {{- .Params.event -}}
     {{- if .Params.eventurl}}</a>{{end }},

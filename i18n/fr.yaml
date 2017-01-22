@@ -7,3 +7,27 @@
     Fièrement propulsé par <a href="http://gohugo.io/">Hugo {{.Hugo.Version}}</a>, en utilisant <a href="http://getbootstrap.com/">Bootstrap</a> et <a href="http://pygments.org/">Pygments</a>.
 - id: talks
   translation: Présentations
+- id: January
+  translation: '{{.Format "2"}} janvier'
+- id: February
+  translation: '{{.Format "2"}} février'
+- id: March
+  translation: '{{.Format "2"}} mars'
+- id: April
+  translation: '{{.Format "2"}} avril'
+- id: May
+  translation: '{{.Format "2"}} mai'
+- id: June
+  translation: '{{.Format "2"}} juin'
+- id: July
+  translation: '{{.Format "2"}} juillet'
+- id: August
+  translation: '{{.Format "2"}} août'
+- id: September
+  translation: '{{.Format "2"}} septembre'
+- id: October
+  translation: '{{.Format "2"}} octobre'
+- id: November
+  translation: '{{.Format "2"}} novembre'
+- id: December
+  translation: '{{.Format "2"}} décembre'
