@@ -5,3 +5,5 @@
 - id: footer-generator
   translation: |
     Fièrement propulsé par <a href="http://gohugo.io/">Hugo {{.Hugo.Version}}</a>, en utilisant <a href="http://getbootstrap.com/">Bootstrap</a> et <a href="http://pygments.org/">Pygments</a>.
+- id: talks
+  translation: Présentations
