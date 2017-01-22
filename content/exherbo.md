@@ -2,6 +2,8 @@
 lang = "en"
 title = "Exherbo"
 date = "2014-01-09T21:25:41"
+type = "page"
+menu = "main"
 +++
 
 I am a fellow user of the Exherbo distribution. I own my own exheres repository, like many exherbo users.
