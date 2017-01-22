@@ -16,6 +16,11 @@ blog = "/blog/:year/:month/:day/:slug/"
 [Languages]
 [Languages.en]
 [Languages.fr]
+[[Languages.fr.menu.main]]
+    name = "À propos"
+    weight = -900
+    identifier = "homepage"
+    url = "/"
 
 [[menu.main]]
     name = "About me"
