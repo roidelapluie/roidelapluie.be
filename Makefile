@@ -4,6 +4,8 @@ JQUERY_VERSION ?= 3.1.1
 
 all: compile adapt-rss
 
+include Bootstrap.Makefile
+
 compile:
 	$(HUGO) -t roidelapluie.be
 
