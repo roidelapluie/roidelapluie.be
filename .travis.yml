@@ -16,4 +16,5 @@ before_install:
 - make install
 - pip install Pygments
 script:
+- which nvm
 - export PATH; bash -xec "export PATH; make install-bootstrap; make deploy"
