@@ -5,7 +5,7 @@
         <div class="navbar-brand mb-0">roidelapluie</div>
         {{ $currentPage := . }}
         <div class="collapse navbar-collapse" id="navbarNav">
-            <div class="navbar-nav">
+            <div class="navbar-nav mr-auto">
                 {{ range .Site.Menus.main }}
                 {{ if not (in $.Site.Data.misc.menu.excluded.excluded .Name) }}
                 <a class="nav-item nav-link {{ if or ($currentPage.IsMenuCurrent "main" .) ($currentPage.HasMenuCurrent "main" .) }} active{{ end }}" href="{{.URL}}">
@@ -13,6 +13,22 @@
                     </a>
                 {{ end }}
                 {{ end }}
+            </div>
+            <div class="navbar-nav">
+                {{ range .Site.Languages }}
+                {{ $.Scratch.Set "link" (printf "/%s" .Lang) }}
+                    {{ $lang := .Lang }}
+                    {{ if $currentPage.IsTranslated }}
+                        {{ range $currentPage.Translations }}
+                            {{ if eq $lang .Lang }}
+                                {{ $.Scratch.Set "link" .Permalink }}
+                            {{ end }}
+                        {{end}}
+                    {{end}}
+                    <a class="nav-item nav-link {{ if eq $currentPage.Lang .Lang }} active{{ end }}" href="{{$.Scratch.Get "link" }}">
+                        {{.Lang}}
+                    </a>
+                {{end}}
             </div>
         </div>
 </nav>
