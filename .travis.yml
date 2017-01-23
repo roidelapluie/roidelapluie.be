@@ -16,5 +16,6 @@ before_install:
 - make install
 - pip install Pygments
 script:
+- export PATH
 - make install-bootstrap
 - make deploy
