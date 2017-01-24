@@ -1,8 +1,8 @@
 +++
 title = "Lifecycle Management with Foreman"
-city = "Brussels"
-country = "Belgium"
-eventURL = "http://wiki.centos.org/Events/Dojo/Brussels2014"
+city = "Bruxelles"
+country = "Belgique"
+eventURL = "http://wiki.centos.org/Events/Dojo/Bruxelles2014"
 event = "CentOS Dojo"
 date = "2014-01-31"
 video = ""

@@ -1,6 +1,6 @@
 +++
 city = "Berlin"
-country = "Germany"
+country = "Allemagne"
 eventURL = "http://www.cloudbees.com/jenkins/juc-2014/berlin"
 date = "2014-06-25"
 event = "Jenkins User Conference"

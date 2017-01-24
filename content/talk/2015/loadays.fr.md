@@ -1,8 +1,8 @@
 +++
 date = "2015-04-11"
 title = "Coworking with git"
-city = "Antwerp"
-country = "Belgium"
+city = "Anvers"
+country = "Belgique"
 eventURL = "http://loadays.org/"
 event = "LOADays"
 video = ""

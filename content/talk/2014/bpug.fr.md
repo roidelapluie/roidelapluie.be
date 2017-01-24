@@ -4,9 +4,9 @@ event = "Belgian Puppet User Group meetup"
 video = ""
 slidesURL = "http://www.slideshare.net/roidelapluie/augeas-swissarmy-knife-puppet-resources"
 title = "Augeas, swiss knife resources for your puppet tree"
-city = "Antwerp"
+city = "Anvers"
 date = "2014-11-12"
-country = "Belgium"
+country = "Belgique"
 
 +++
 

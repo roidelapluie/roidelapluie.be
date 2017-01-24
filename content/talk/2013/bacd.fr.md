@@ -1,5 +1,5 @@
 +++
-country = "The Netherlands"
+country = "Pays-Bas"
 date = "2013-06-13"
 eventURL = "http://bacdamsterdam.eventbrite.com/"
 event = "Build A Cloud Day"

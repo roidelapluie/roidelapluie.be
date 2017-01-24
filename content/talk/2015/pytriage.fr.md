@@ -4,8 +4,8 @@ event = "Inuits"
 video = ""
 slidesURL = "https://github.com/Inuits/PyTriage"
 title = "PyTriage"
-city = "Antwerp"
-country = "Belgium"
+city = "Anvers"
+country = "Belgique"
 date = "2015-07-31"
 
 +++

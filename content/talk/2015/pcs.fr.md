@@ -5,8 +5,8 @@ event = "Puppet Contributor Summit"
 video = ""
 slidesURL = "http://www.slideshare.net/roidelapluie/a-call-to-give-back-puppetlabscorosync-to-the-community"
 title = "a call to give back puppetlabs-corosync to the community"
-city = "Ghent"
-country = "Belgium"
+city = "Gand"
+country = "Belgique"
 
 +++
 

@@ -1,5 +1,5 @@
 +++
-country = "Czech Republic"
+country = "République tchèque"
 eventURL = "https://prague2013.drupal.org/"
 event = "DrupalCon"
 video = "http://www.youtube.com/watch?v=kmy2h8Q-UOc"

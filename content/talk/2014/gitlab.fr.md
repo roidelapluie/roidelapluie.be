@@ -1,6 +1,6 @@
 +++
-city = "Antwerp"
-country = "Belgium"
+city = "Anvers"
+country = "Belgique"
 eventURL = "https://inuits.eu"
 event = "Inuits"
 video = ""

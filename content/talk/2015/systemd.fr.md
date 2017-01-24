@@ -1,6 +1,6 @@
 +++
 city = "Berlin"
-country = "Germany"
+country = "Allemagne"
 eventURL = "https://conf.systemd.io/"
 event = "systemd.conf"
 video = "https://www.youtube.com/watch?v=OhCTsMBHx3I"
