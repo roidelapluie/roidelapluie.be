@@ -30,13 +30,4 @@ clean:
 
 deploy: clean all
 	cd public && \
-		rm css/.gitignore && \
-		rm fonts/.gitignore && \
-		rm js/.gitignore && \
-		git init && \
-		touch .nojekyll && \
-		git add . && \
-		git config user.name "Travis CI" && \
-		git config user.email "travis@roidelapluie.be" && \
-		git commit -m "Hugo output" && \
-		git push -f git@github.com:roidelapluie/roidelapluie.github.io master
+		scp -rv . travis@62.210.189.165:roidelapluie.be/
