@@ -30,4 +30,5 @@ clean:
 
 deploy: clean all
 	cd public && \
-		scp -rv . travis@62.210.189.165:roidelapluie.be/
+		echo 'put -r .'|sftp -o UserKnownHostsFile=../keys -i deploy_key travis@62.210.189.165:roidelapluie.be/
+
