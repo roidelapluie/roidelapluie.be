@@ -31,3 +31,27 @@
   translation: '{{.Format "2"}} novembre'
 - id: December
   translation: '{{.Format "2"}} décembre'
+- id: January-fuzzy
+  translation: Janvier
+- id: February-fuzzy
+  translation: Février
+- id: March-fuzzy
+  translation: Mars
+- id: April-fuzzy
+  translation: Avril
+- id: May-fuzzy
+  translation: Mai
+- id: June-fuzzy
+  translation: Juin
+- id: July-fuzzy
+  translation: Juillet
+- id: August-fuzzy
+  translation: Août
+- id: September-fuzzy
+  translation: Septembre
+- id: October-fuzzy
+  translation: Octobre
+- id: November-fuzzy
+  translation: Novembre
+- id: December-fuzzy
+  translation: Décembre

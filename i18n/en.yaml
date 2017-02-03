@@ -31,3 +31,27 @@
   translation: '{{.Format "January 2"}}'
 - id: December
   translation: '{{.Format "January 2"}}'
+- id: January-fuzzy
+  translation: '{{.Format "January"}}'
+- id: February-fuzzy
+  translation: '{{.Format "January"}}'
+- id: March-fuzzy
+  translation: '{{.Format "January"}}'
+- id: April-fuzzy
+  translation: '{{.Format "January"}}'
+- id: May-fuzzy
+  translation: '{{.Format "January"}}'
+- id: June-fuzzy
+  translation: '{{.Format "January"}}'
+- id: July-fuzzy
+  translation: '{{.Format "January"}}'
+- id: August-fuzzy
+  translation: '{{.Format "January"}}'
+- id: September-fuzzy
+  translation: '{{.Format "January"}}'
+- id: October-fuzzy
+  translation: '{{.Format "January"}}'
+- id: November-fuzzy
+  translation: '{{.Format "January"}}'
+- id: December-fuzzy
+  translation: '{{.Format "January"}}'
