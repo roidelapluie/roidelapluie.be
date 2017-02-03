@@ -14,6 +14,6 @@
     {{- if .Params.slidesurl}}</a>{{end }}
     {{if .Params.video}} (<a href="{{.Params.video}}">video</a>){{end -}}
     {{if gt .Date.Unix .Now.Unix }}
-    <span class="badge badge-primary">scheduled</span>
+    <span class="badge badge-primary">{{i18n "scheduledtalk" }}</span>
     {{end}}
 </li>
