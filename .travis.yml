@@ -13,7 +13,8 @@ before_install:
   -in deploy_key.enc -out deploy_key -d
 - chmod 600 deploy_key
 - ssh-add deploy_key
-- make install
-- pip install Pygments
+- travis_retry make install
+- travis_retry pip install Pygments
 script:
-- make install-bootstrap && make deploy
+- travis_retry make install-bootstrap
+- make deploy
