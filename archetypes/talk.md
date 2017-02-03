@@ -6,4 +6,5 @@ slidesURL = ""
 video = ""
 event = ""
 eventURL = ""
+fuzzydate = false
 +++
