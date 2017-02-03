@@ -5,6 +5,9 @@
 - id: footer-generator
   translation: |
     Fièrement propulsé par <a href="http://gohugo.io/">Hugo {{.Hugo.Version}}</a>, en utilisant <a href="http://getbootstrap.com/">Bootstrap</a> et <a href="http://pygments.org/">Pygments</a>.
+- id: footer-date
+  translation: |
+    Cette page a été génerée le  {{.Now.Format "02-01-2006"}}.
 - id: scheduledtalk
   translation: planifié
 - id: talks
