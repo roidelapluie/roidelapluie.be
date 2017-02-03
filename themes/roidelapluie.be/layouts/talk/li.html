@@ -1,5 +1,9 @@
 <li>
+    {{if .Params.fuzzydate}}
+    {{ i18n (.Date.Format "January-fuzzy") (.Date)}},
+    {{else}}
     {{ i18n (.Date.Format "January") (.Date)}},
+    {{end}}
     {{if .Params.eventurl}}<a href="{{.Params.eventurl}}">{{end -}}
         {{- .Params.event -}}
     {{- if .Params.eventurl}}</a>{{end }},
@@ -9,4 +13,7 @@
         {{.Title}}
     {{- if .Params.slidesurl}}</a>{{end }}
     {{if .Params.video}} (<a href="{{.Params.video}}">video</a>){{end -}}
+    {{if gt .Date.Unix .Now.Unix }}
+    <span class="badge badge-primary">scheduled</span>
+    {{end}}
 </li>
