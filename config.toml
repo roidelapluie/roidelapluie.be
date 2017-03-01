@@ -1,6 +1,6 @@
 DefaultContentLanguage = "en"
 title = "Julien Pivotto"
-baseurl = "https://roidelapluie.github.io/"
+baseurl = "https://roidelapluie.be/"
 SectionPagesMenu = "main"
 Paginate = 5
 PygmentsCodeFences = true
