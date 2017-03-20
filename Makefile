@@ -23,7 +23,7 @@ install:
 	mv hugo_$(HUGO_VERSION)_linux_amd64/hugo_$(HUGO_VERSION)_linux_amd64 hugo-bin
 	rmdir hugo_$(HUGO_VERSION)_linux_amd64
 	chmod +x hugo-bin
-	wget -O themes/roidelapluie.be/static/css/vis.min.js https://cdnjs.cloudflare.com/ajax/libs/vis/$(VIS_VERSION)/vis.min.css
+	wget -O themes/roidelapluie.be/static/css/vis.min.css https://cdnjs.cloudflare.com/ajax/libs/vis/$(VIS_VERSION)/vis.min.css
 	wget -O themes/roidelapluie.be/static/js/vis.min.js https://cdnjs.cloudflare.com/ajax/libs/vis/$(VIS_VERSION)/vis.min.js
 	wget -O themes/roidelapluie.be/static/js/jquery.min.js https://code.jquery.com/jquery-$(JQUERY_VERSION).min.js
 	wget -O themes/roidelapluie.be/static/js/jquery.min.map https://code.jquery.com/jquery-$(JQUERY_VERSION).min.map
