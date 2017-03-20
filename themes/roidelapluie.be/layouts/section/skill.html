@@ -1,0 +1,33 @@
+{{ partial "header.html" . }}
+<h1 class="title">Skills</h1>
+
+<script type="text/javascript" src="{{ "js/vis.min.js" | relURL }}"></script>
+<link rel="stylesheet" href="{{ "css/vis.min.css" | relURL }}" />
+
+<div id="visualization"></div>
+
+<script type="text/javascript">
+var container = document.getElementById('visualization');
+var items = new vis.DataSet([
+{{ range $index, $element :=  (where .Site.Pages.ByWeight "Type" "skill")  }}
+{id: {{$index}}, content: {{.Title}}, start: {{ .Params.StartDate }}, end:  {{ if eq "" .Params.EndDate  }}new Date() {{ else }}{{ .Params.EndDate }} {{end}}, group: {{ .Params.Category }}},
+{{end}}
+]);
+var groups = [
+{{ range ((where .Site.Pages.ByWeight "Type" "skill").GroupByParam "category")  }}
+{{range first 1 .Pages}}
+      {
+          id: {{ .Params.Category }},
+          content: {{ .Params.Category }}
+      },
+{{end}}
+{{end}}
+];
+
+var options = {
+};
+
+var timeline = new vis.Timeline(container, items, options);
+timeline.setGroups(groups);
+</script>
+{{ partial "footer.html" . }}
