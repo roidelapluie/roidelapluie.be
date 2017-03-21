@@ -1,11 +1,9 @@
-HUGO_VERSION ?= 0.18.1
+HUGO_VERSION ?= 0.19
 HUGO ?= ./hugo-bin
 JQUERY_VERSION ?= 3.1.1
 VIS_VERSION ?= 4.19.1
 
 all: compile adapt-rss
-
-include Bootstrap.Makefile
 
 compile:
 	$(HUGO) -t roidelapluie.be
@@ -22,6 +20,10 @@ install:
 	tar xvf hugo_$(HUGO_VERSION)_Linux-64bit.tar.gz hugo_$(HUGO_VERSION)_linux_amd64/hugo_$(HUGO_VERSION)_linux_amd64
 	mv hugo_$(HUGO_VERSION)_linux_amd64/hugo_$(HUGO_VERSION)_linux_amd64 hugo-bin
 	rmdir hugo_$(HUGO_VERSION)_linux_amd64
+	wget https://github.com/roidelapluie/bootstrap/archive/compiled.tar.gz
+	tar xvf compiled.tar.gz
+	cp -rv bootstrap-compiled/dist/css/* themes/roidelapluie.be/static/css
+	cp -rv bootstrap-compiled/dist/js/* themes/roidelapluie.be/static/js
 	chmod +x hugo-bin
 	wget -O themes/roidelapluie.be/static/css/vis.min.css https://cdnjs.cloudflare.com/ajax/libs/vis/$(VIS_VERSION)/vis.min.css
 	wget -O themes/roidelapluie.be/static/js/vis.min.js https://cdnjs.cloudflare.com/ajax/libs/vis/$(VIS_VERSION)/vis.min.js

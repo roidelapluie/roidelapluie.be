@@ -16,5 +16,4 @@ before_install:
 - travis_retry make install
 - travis_retry pip install Pygments
 script:
-- travis_retry make install-bootstrap
 - make deploy
