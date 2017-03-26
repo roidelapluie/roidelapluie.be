@@ -5,7 +5,7 @@ slidesURL = "https://www.slideshare.net/roidelapluie/state-of-the-jenkins-automa
 fuzzydate = false
 eventURL = "https://www.flossuk.org/talks-workshops-and-events-2017/"
 country = "UK"
-video = ""
+video = "https://www.youtube.com/watch?v=YWTWeo5f5Ug"
 title = "State of the Jenkins Automation"
 city = "Manchester"
 
