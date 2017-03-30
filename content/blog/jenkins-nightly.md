@@ -11,7 +11,9 @@ slug = "nightly-jobs-jenkins"
 Jenkins can spread the load of Jobs by using H instead of * in the cron fields.
 It means that:
 
-`H 3 * * *`
+```
+H 3 * * *
+```
 
 Means: Run between 3 and 4 am.
 
@@ -20,7 +22,9 @@ name.
 
 What about this one:
 
-`H H * * *`
+```
+H H * * *
+```
 
 Means: Run once a day. The moment will be calculated by a Jenkins based on the
 job name.
@@ -28,7 +32,9 @@ job name.
 But what if I have hundreds of jobs, I want to run them once a day, but during
 night? Something like:
 
-`H H(0-5) * * *`
+```
+H H(0-5) * * *
+```
 
 Means: Run the job once everyday between 12am and 6am.
 
