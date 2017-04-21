@@ -30,7 +30,7 @@ That part was easy. I've got my snapshots built quickly.
 Then enters [Terraform](https://terraform.io). Terraform can deploy the
 snapshots built by Packer. Just like this:
 
-```hcl
+```
 resource "digitalocean_droplet" "jenkins" {
   image = "1028374"
   count  = "${var.count}"
@@ -71,7 +71,7 @@ jq -r -n --arg id "$id" '{"id":$id}'
 
 In Terraform:
 
-```hcl
+```
 data "external" "jenkins_snapshot" {
   program = ["./do_snapshot_id"]
   query {
@@ -109,7 +109,7 @@ use it now. Here is the DigitalOcean image datasource:
 
 [p]:https://github.com/hashicorp/terraform/commit/c2a1e688cb19aef1ac76d7f360876824ce4f8c46
 
-```hcl
+```
 data "digitalocean_image" "jenkins" {
   name = "jenkins-${var.do_jenkins_droplet_version}"
 }
