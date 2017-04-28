@@ -4,10 +4,10 @@ event = "Open Source Data Center Conference"
 slidesURL = ""
 city = "Berlin"
 country = "Germany"
-fuzzydate = true
+fuzzydate = false
 title = "something about Jenkins"
 video = ""
-date = "2017-05-16"
+date = "2017-05-18"
 
 +++
 
