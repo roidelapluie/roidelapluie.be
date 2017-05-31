@@ -7,7 +7,7 @@ slidesURL = ""
 title = "Workshop about Jenkins"
 city = "Gothenburg"
 fuzzydate = false
-date = "2017-05-31T22:16:19+02:00"
+date = "2017-05-30T22:16:19+02:00"
 
 +++
 
