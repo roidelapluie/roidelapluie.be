@@ -1,11 +1,11 @@
 +++
 eventURL = "https://www.netways.de/events/osdc/overview/"
 event = "Open Source Data Center Conference"
-slidesURL = ""
+slidesURL = "https://www.slideshare.net/roidelapluie/jenkins-automation-76573580"
 city = "Berlin"
 country = "Germany"
 fuzzydate = false
-title = "something about Jenkins"
+title = "Jenkins Automation"
 video = ""
 date = "2017-05-18"
 
