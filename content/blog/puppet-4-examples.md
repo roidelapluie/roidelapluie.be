@@ -85,7 +85,7 @@ class demo::server (
 ### Define basic parameters like length and minimum value
 
 In most of the cases, you do not want empty `String`. You should in most of the
-cases use `String[0]`. The same applies for `Integer`: most of the case you want
+cases use `String[1]`. The same applies for `Integer`: most of the case you want
 integers being greater than 0. Use `Integer[0]` to do so.
 
 Bad:
