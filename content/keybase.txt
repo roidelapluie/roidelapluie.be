@@ -1,0 +1,62 @@
+==================================================================
+https://keybase.io/roidelapluie
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://roidelapluie.be
+  * I am roidelapluie (https://keybase.io/roidelapluie) on keybase.
+  * I have a public key with fingerprint 0C7F 1877 69D0 72B9 3B64  2BB9 E484 2505 33AE 92DA
+
+To do so, I am signing this object:
+
+{
+    "body": {
+        "key": {
+            "eldest_kid": "0101a36c5886669fa38cffbbe190355dcd66a3cb6a5507cd43155e8dc434eb77649b0a",
+            "fingerprint": "0c7f187769d072b93b642bb9e484250533ae92da",
+            "host": "keybase.io",
+            "key_id": "e484250533ae92da",
+            "kid": "0101a36c5886669fa38cffbbe190355dcd66a3cb6a5507cd43155e8dc434eb77649b0a",
+            "uid": "23f960504e291581df5db4c767ca0500",
+            "username": "roidelapluie"
+        },
+        "service": {
+            "hostname": "roidelapluie.be",
+            "protocol": "https:"
+        },
+        "type": "web_service_binding",
+        "version": 1
+    },
+    "ctime": 1498508350,
+    "expire_in": 157680000,
+    "prev": "2b6be70cb50cd705e7beeae37e3b80a99b12bb507976fe4dc18dcddf9c019bf3",
+    "seqno": 19,
+    "tag": "signature"
+}
+
+which yields the signature:
+
+-----BEGIN PGP MESSAGE-----
+
+owGtUr9rFEEY3ZgoyYEiglclhYsI4nnO7uzM7Fyn/gVRDFid8818exly2V139y4e
+h2CnpdiICgpWlnYWgo0/GsEikFIL0YiFhY2d0ZlgupROM8z3vffmfW/m7uHZYL59
+j3d+vz325dvM++8QXF0enp+GUJhJ2JuGa7i74dBg3fTXrAl7IYlIpCjXLE055zJT
+NNVZBoCRJJQxow3nimrgijEitEloxBimRic0QRCCJxKICjthZvMBVmVl88bLapFF
+qWtLQ0QMkgJPYgCJSZrEjDBKFcrYeOJqUXuGMweqxq4tXM0d+rv29sH/Z9+jXbmY
+ZpITRhKMZcTSyGTMQKIFF1q5MvHAGqtcraNDV4U1OFTlcGQxvNkJXWdsNfpw/TT7
+oLqATqKsiqbQxdA1V5umrHue3ExKj95A6P/T6YPNjYvTMcZY1bbIw17kkLqxXjhK
+ZMpIShnphHijtBX2rUcwwVPilr8Hx07yWgwcUBANjGgjCEMBiAqpQAopUVJC5B7F
+5SMFzzAxOnIBGZNJTSIJGQ39aNfzwolLZ1QNnGhtB7lqRpUbvHVnNBe054Ol9om5
+mcHl1/LrRyjLxZd7X/DgAf//gtbC0b0KjIM/K1tbtemm25PtN+bRuSvri49/LT+4
+/+LkheNnT5mNd8+DHf7pycrppR/PXt0+c2vz4sPP+OFS/vPIjt7szj491Jou/AU=
+=Szf0
+-----END PGP MESSAGE-----
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/roidelapluie
+
+==================================================================
+
