@@ -8,7 +8,8 @@ pygmentsstyle = "default"
 cleandestinationdir = true
 theme = "roidelapluie.be"
 
-rssuri = "rss.xml"
+[outputFormats.RSS]
+baseName = "rss.xml"
 
 [permalinks]
 blog = "/blog/:year/:month/:day/:slug/"
