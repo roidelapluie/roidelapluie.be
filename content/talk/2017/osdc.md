@@ -6,7 +6,7 @@ city = "Berlin"
 country = "Germany"
 fuzzydate = false
 title = "Jenkins Automation"
-video = ""
+video = "https://www.youtube.com/watch?v=5cWS0yLur3Q"
 date = "2017-05-18"
 
 +++
