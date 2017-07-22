@@ -32,6 +32,7 @@ clean:
 	rm -rf public
 
 deploy: clean all
+	find public -name .gitignore -delete
 	cd public && \
 		git init . && \
 		git add . && \
