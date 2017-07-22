@@ -92,7 +92,12 @@ spec:
         volumeMounts:
         - mountPath: /etc/traefik
           name: traefikconf
+        - mountPath: /etc/traefik-ssl
+          name: traefikssl
       volumes:
+      - name: traefikssl
+        persistentVolumeClaim:
+          claimName: sslcerts
       - name: traefikconf
         configMap:
           name: traefik
@@ -117,7 +122,7 @@ data:
     [entryPoints.https.tls]
     [acme]
     email = "roidelapluie@roidelapluie.be"
-    storage = "acme.json"
+    storage = "/etc/traefik-ssl/acme.json"
     entryPoint = "https"
     [[acme.domains]]
     main = "kube.roidelapluie.be"
@@ -131,3 +136,17 @@ data:
     backend = "roidelapluie"
     [frontends.roidelapluie.route.roidelapluie]
     rule = "Host:kube.roidelapluie.be"
+---
+kind: PersistentVolumeClaim
+apiVersion: v1
+metadata:
+  name: sslcerts
+  labels:
+    repo: roidelapluie.be
+spec:
+  accessModes:
+    - ReadWriteOnce
+  resources:
+    requests:
+      storage: 1Gi
+  storageClassName: default
