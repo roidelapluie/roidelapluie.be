@@ -1,0 +1,40 @@
+---
+apiVersion: apps/v1beta1
+kind: Deployment
+metadata:
+  name: roidelapluie-website
+spec:
+  replicas: 2
+  template:
+    metadata:
+      labels:
+        website: roidelapluie.be
+        app: nginx
+        version: '2'
+    spec:
+      containers:
+      - name: nginx
+        image: nginx:alpine
+        ports:
+        - containerPort: 80
+        volumeMounts:
+        - mountPath: /usr/share/nginx/html
+          name: git-repo
+          subPath: roidelapluie.be-output
+      volumes:
+      - name: git-repo
+        gitRepo:
+          repository: "https://github.com/roidelapluie/roidelapluie.be-output"
+          revision: "master"
+---
+kind: Service
+apiVersion: v1
+metadata:
+  name: roidelapluie-website
+spec:
+  selector:
+    website: roidelapluie.be
+  ports:
+  - protocol: TCP
+    port: 80
+  type: LoadBalancer
