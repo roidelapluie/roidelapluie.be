@@ -3,6 +3,8 @@ apiVersion: apps/v1beta1
 kind: Deployment
 metadata:
   name: roidelapluie-website
+  labels:
+    repo: roidelapluie.be
 spec:
   replicas: 2
   template:
@@ -11,6 +13,8 @@ spec:
         website: roidelapluie.be
         app: nginx
         version: '2'
+        ssl: 'no'
+        repo: roidelapluie.be
     spec:
       containers:
       - name: nginx
@@ -31,10 +35,99 @@ kind: Service
 apiVersion: v1
 metadata:
   name: roidelapluie-website
+  labels:
+    repo: roidelapluie.be
 spec:
   selector:
     website: roidelapluie.be
+    ssl: 'yes'
   ports:
   - protocol: TCP
     port: 80
+    name: http
+  - protocol: TCP
+    port: 443
+    name: https
   type: LoadBalancer
+---
+kind: Service
+apiVersion: v1
+metadata:
+  name: roidelapluie-website-nossl
+  labels:
+    repo: roidelapluie.be
+spec:
+  selector:
+    website: roidelapluie.be
+    ssl: 'no'
+  ports:
+  - protocol: TCP
+    port: 80
+  type: ClusterIP
+---
+apiVersion: apps/v1beta1
+kind: Deployment
+metadata:
+  name: traefik
+  labels:
+    repo: roidelapluie.be
+spec:
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        website: roidelapluie.be
+        app: traefik
+        version: '1'
+        ssl: 'yes'
+        repo: roidelapluie.be
+    spec:
+      containers:
+      - name: traefik
+        image: traefik:1.3-alpine
+        args: [""]
+        ports:
+        - containerPort: 80
+        - containerPort: 443
+        volumeMounts:
+        - mountPath: /etc/traefik
+          name: traefikconf
+      volumes:
+      - name: traefikconf
+        configMap:
+          name: traefik
+---
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: traefik
+  labels:
+    repo: roidelapluie.be
+data:
+  traefik.toml: |
+    defaultEntryPoints = ["http", "https"]
+    logLevel = "DEBUG"
+    [entryPoints]
+    [entryPoints.http]
+    address = ":80"
+    [entryPoints.http.redirect]
+    entryPoint = "https"
+    [entryPoints.https]
+    address = ":443"
+    [entryPoints.https.tls]
+    [acme]
+    email = "roidelapluie@roidelapluie.be"
+    storage = "acme.json"
+    entryPoint = "https"
+    [[acme.domains]]
+    main = "kube.roidelapluie.be"
+    [file]
+    [backends]
+    [backends.roidelapluie]
+    [backends.roidelapluie.servers.server1]
+    url = "http://roidelapluie-website-nossl:80"
+    [frontends]
+    [frontends.roidelapluie]
+    backend = "roidelapluie"
+    [frontends.roidelapluie.route.roidelapluie]
+    rule = "Host:kube.roidelapluie.be"
