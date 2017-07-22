@@ -36,7 +36,7 @@ deploy: clean all
 		git init . && \
 		git add . && \
 		git commit -m 'Automated Build' && \
-		git push -f git@github.com:roidelapluie/roidelapluie.be-output.git
+		git push -f git@github.com:roidelapluie/roidelapluie.be-output.git master
 	cd public && \
 		echo 'put -r .'|sftp -o UserKnownHostsFile=../keys -i deploy_key travis@62.210.189.165:roidelapluie.be/
 
