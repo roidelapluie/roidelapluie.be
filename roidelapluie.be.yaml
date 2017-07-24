@@ -124,18 +124,11 @@ data:
     email = "roidelapluie@roidelapluie.be"
     storage = "/etc/traefik-ssl/acme.json"
     entryPoint = "https"
+    onDemand = true
+    onHostRule = true
     [[acme.domains]]
     main = "kube.roidelapluie.be"
-    [file]
-    [backends]
-    [backends.roidelapluie]
-    [backends.roidelapluie.servers.server1]
-    url = "http://roidelapluie-website-nossl:80"
-    [frontends]
-    [frontends.roidelapluie]
-    backend = "roidelapluie"
-    [frontends.roidelapluie.route.roidelapluie]
-    rule = "Host:kube.roidelapluie.be"
+    [kubernetes]
 ---
 kind: PersistentVolumeClaim
 apiVersion: v1
@@ -150,3 +143,21 @@ spec:
     requests:
       storage: 1Gi
   storageClassName: default
+---
+apiVersion: extensions/v1beta1
+kind: Ingress
+metadata:
+  name: roidelapluie.be
+  annotations:
+    kubernetes.io/ingress.class: traefik
+  labels:
+    repo: roidelapluie.be
+spec:
+  rules:
+  - host: kube.roidelapluie.be
+    http:
+      paths:
+      - path: /
+        backend:
+          serviceName: roidelapluie-website-nossl
+          servicePort: 80
