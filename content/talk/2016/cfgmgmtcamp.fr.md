@@ -7,6 +7,7 @@ date = "2016-02-01"
 title = "CentOS Config Management SIG"
 city = "Gand"
 country = "Belgique"
+country_emoji = "belgium"
 
 +++
 

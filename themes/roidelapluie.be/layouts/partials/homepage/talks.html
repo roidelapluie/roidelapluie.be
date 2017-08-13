@@ -1,8 +1,15 @@
-<h1>{{ i18n "talks" }}</h1>
+<h1 class="title">{{ i18n "talks" }}</h1>
 
 {{ range ((where (where .Site.Pages.ByWeight "Type" "talk") "IsNode" false).GroupByDate "2006")  }}
 {{range first 1 .Pages}}
-<h2 class="mb-2 mt-3">{{.Date.Format "2006"}}</h2>
+<hr style="visibility:hidden"/>
+<div class="level">
+    <div class="level-left">
+    <div class="level-item">
+<h2 class="subtitle">{{.Date.Format "2006"}}</h2>
+    </div>
+    </div>
+    </div>
 {{end}}
 <ul class="list-unstyled">
 {{range .Pages}}

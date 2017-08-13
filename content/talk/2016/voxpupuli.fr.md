@@ -1,6 +1,7 @@
 +++
 city = "Gand"
 country = "Belgique"
+country_emoji = "belgium"
 eventURL = "https://www.devopsdays.org/events/2016-ghent/welcome/"
 event = "DevOps Days"
 video = ""

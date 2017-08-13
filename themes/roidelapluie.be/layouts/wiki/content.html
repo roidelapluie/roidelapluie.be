@@ -1,11 +1,20 @@
-<h1 class="title mt-3 mb-3">
-    {{.Title}}
-</h1>
-<div class="content">
+<section class="hero is-info">
+    <div class="hero-body">
+        <div class="container">
+            <h1 class="title">
+                Wiki
+            </h1>
+        </div>
+    </div>
+</section>
+<section class="section">
+    <div class="container">
+        <h1 class="title">{{.Title}}</h1>
     {{.Content}}
-</div>
-<div class="message mb-3">
-    <div class="bg-faded p-3 text-center">
+<div class="message">
+    <div class="message-body has-text-centered">
         <a href="{{.URL}}">Permalink</a>. First published on {{.Date.Format "Mon 2 December 2006"}}.
     </div>
 </div>
+    </div>
+</section>

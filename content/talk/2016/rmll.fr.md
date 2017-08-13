@@ -1,6 +1,7 @@
 +++
 date = "2016-07-05"
 country = "France"
+country_emoji = "fr"
 eventURL = "https://sec2016.rmll.info/"
 event = "RMLL Security Track"
 video = "https://rmll.ubicast.tv/videos/dnssec_/"

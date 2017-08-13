@@ -4,6 +4,7 @@ event = "Percona Live"
 slidesURL = ""
 city = "Dublin"
 country = "Irlande"
+country_emoji = "ireland"
 fuzzydate = true
 title = "Puppetizer MySQL"
 video = ""

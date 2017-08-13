@@ -1,14 +1,18 @@
-        </div>
-        </div>
-        <footer class="pt-2">
-            <div class="text-center p-5">
+        <footer class="footer">
+            <div class="container">
+            <div class="content has-text-centered">
                 <p>{{ i18n "footer-author-license" . | safeHTML}}</p>
                 <p>{{ i18n "footer-generator" . | safeHTML}}</p>
                 <p>{{ i18n "footer-date" now | safeHTML}}</p>
             </div>
+            </div>
         </footer>
-        <link rel="stylesheet" href="{{ "css/bootstrap.min.css" | relURL }}">
-        <script type="text/javascript" src="{{ "js/jquery.min.js" | relURL }}"></script>
-        <script type="text/javascript" src="{{ "js/bootstrap.min.js" | relURL }}"></script>
+        <link rel="stylesheet" href="{{ "css/bulma.css" | relURL }}">
+        <link rel="stylesheet" href="{{ "css/twemoji.css" | relURL }}">
+        <script type="text/javascript" src="{{ "js/bulma.js" | relURL }}"></script>
+        <script type="text/javascript" src="{{ "js/twemoji.min.js"| relURL }}"></script>
+        <script type="text/javascript">
+twemoji.parse(document.body);
+        </script>
     </body>
 </html>

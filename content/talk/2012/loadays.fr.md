@@ -1,5 +1,6 @@
 +++
 country = "Belgique"
+country_emoji = "belgium"
 eventURL = "http://loadays.org/"
 event = "LOADays"
 video = ""

@@ -1,6 +1,7 @@
 +++
 city = "Anvers"
 country = "Belgique"
+country_emoji = "belgium"
 eventURL = "https://inuits.eu"
 event = "Inuits"
 video = ""

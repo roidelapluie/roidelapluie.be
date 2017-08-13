@@ -1,5 +1,6 @@
 +++
 country = "Czech Republic"
+country_emoji = "czech_republic"
 eventURL = "https://prague2013.drupal.org/"
 event = "DrupalCon"
 video = "http://www.youtube.com/watch?v=kmy2h8Q-UOc"

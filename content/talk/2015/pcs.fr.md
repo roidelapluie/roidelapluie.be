@@ -7,6 +7,7 @@ slidesURL = "http://www.slideshare.net/roidelapluie/a-call-to-give-back-puppetla
 title = "a call to give back puppetlabs-corosync to the community"
 city = "Gand"
 country = "Belgique"
+country_emoji = "belgium"
 
 +++
 

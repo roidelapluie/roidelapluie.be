@@ -1,5 +1,6 @@
 +++
 country = "The Netherlands"
+country_emoji = "netherlands"
 date = "2013-06-13"
 eventURL = "http://bacdamsterdam.eventbrite.com/"
 event = "Build A Cloud Day"

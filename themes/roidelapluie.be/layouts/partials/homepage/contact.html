@@ -1,10 +1,7 @@
-<ul class="nav nav-pills justify-content-center flex-md-row flex-column mb-3">
+<hr style="visibility:hidden"/>
 {{range .Site.Data.misc.contact}}
-  <li class="nav-item justify-content-center d-inline-flex">
 {{ $name := index . 0 }}
 {{ $url := index . 1 }}
 {{ $color := index . 2 }}
-<a class="nav-link btn btn-{{$color}} m-2" href="{{$url}}">{{$name}}</a>
-</li>
+<a class="button is-{{$color}} m-2" href="{{$url}}">{{$name}}</a>
 {{end}}
-</ul>

@@ -4,6 +4,7 @@ slidesURL = "http://www.slideshare.net/roidelapluie/managing-a-rd-lab-with-forem
 title = "Managing a R&D Lab with Foreman"
 city = "Berlin"
 country = "Allemagne"
+country_emoji = "de"
 date = "2016-04-28"
 eventURL = "https://www.netways.de/en/events_trainings/osdc/overview/"
 event = "Open Source Data Center conference"

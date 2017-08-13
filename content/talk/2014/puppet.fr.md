@@ -5,6 +5,7 @@ slidesURL = "http://www.slideshare.net/roidelapluie/augeas-swiss-knife-resources
 title = "Augeas, swiss knife resources for your puppet tree"
 city = "Londres"
 country = "Royaume-Uni"
+country_emoji = "uk"
 eventURL = "http://puppetlabs.com/events/puppet-camp-london-1"
 event = "Puppet Camp"
 

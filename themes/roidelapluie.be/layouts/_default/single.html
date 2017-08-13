@@ -1,4 +1,16 @@
 {{ partial "header.html" . }}
-<h1>{{.Title}}</h1>
+
+<section class="hero is-info">
+    <div class="hero-body">
+        <div class="container">
+            <h1 class="title">
+{{.Title}}
+            </h1>
+        </div>
+    </div>
+</section>
+<section class="section">
+    <div class="container">
 {{.Content}}
+    </div></section>
 {{ partial "footer.html" . }}

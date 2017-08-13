@@ -18,10 +18,10 @@ install:
 	sudo apt-get install python3-pygments
 	wget https://github.com/spf13/hugo/releases/download/v$(HUGO_VERSION)/hugo_$(HUGO_VERSION)_Linux-64bit.tar.gz
 	tar xvf hugo_$(HUGO_VERSION)_Linux-64bit.tar.gz hugo
-	wget https://github.com/roidelapluie/bootstrap/archive/compiled.tar.gz
-	tar xvf compiled.tar.gz
-	cp -rv bootstrap-compiled/dist/css/* themes/roidelapluie.be/static/css
-	cp -rv bootstrap-compiled/dist/js/* themes/roidelapluie.be/static/js
+#	wget https://github.com/roidelapluie/bootstrap/archive/compiled.tar.gz
+#	tar xvf compiled.tar.gz
+#	cp -rv bootstrap-compiled/dist/css/* themes/roidelapluie.be/static/css
+#	cp -rv bootstrap-compiled/dist/js/* themes/roidelapluie.be/static/js
 	chmod +x $(HUGO)
 	wget -O themes/roidelapluie.be/static/css/vis.min.css https://cdnjs.cloudflare.com/ajax/libs/vis/$(VIS_VERSION)/vis.min.css
 	wget -O themes/roidelapluie.be/static/js/vis.min.js https://cdnjs.cloudflare.com/ajax/libs/vis/$(VIS_VERSION)/vis.min.js

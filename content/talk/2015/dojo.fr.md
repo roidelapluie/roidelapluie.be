@@ -1,5 +1,6 @@
 +++
 country = "Belgique"
+country_emoji = "belgium"
 date = "2015-01-30"
 eventURL = "http://wiki.centos.org/Events/Dojo/Bruxelles2015"
 event = "CentOS DoJo"

@@ -7,6 +7,7 @@ event = "DevOps Meetup (CraftConf)"
 title = "Do you know all of Puppet?"
 city = "Budapest"
 country = "Hongrie"
+country_emoji = "hungary"
 eventURL = "https://craft-conf.com/"
 
 +++

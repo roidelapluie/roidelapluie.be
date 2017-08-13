@@ -1,7 +1,20 @@
 {{ partial "header.html" . }}
+<section class="hero is-info">
+    <div class="hero-body">
+        <div class="container">
+            <h1 class="title">
+                Blog
+            </h1>
+        </div>
+    </div>
+</section>
+<section class="section">
+<div class="container">
     {{range .Paginator.Pages}}
         {{.Render "content"}}
         <hr class="mb-4 mt-4"/>
     {{end}}
     {{ partial "pagination.html" . }}
+    </div>
+</section>
 {{ partial "footer.html" . }}

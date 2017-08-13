@@ -1,5 +1,6 @@
 +++
 country = "France"
+country_emoji = "fr"
 eventURL = "http://www.openworldforum.org/en/"
 event = "Open World Forum"
 video = ""

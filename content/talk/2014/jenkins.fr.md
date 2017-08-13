@@ -1,6 +1,7 @@
 +++
 city = "Berlin"
 country = "Allemagne"
+country_emoji = "de"
 eventURL = "http://www.cloudbees.com/jenkins/juc-2014/berlin"
 date = "2014-06-25"
 event = "Jenkins User Conference"

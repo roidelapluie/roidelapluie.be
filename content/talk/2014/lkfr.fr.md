@@ -1,6 +1,7 @@
 +++
 city = "Paris"
 country = "France"
+country_emoji = "fr"
 date = "2014-11-06"
 eventURL = "http://www.leankanban.fr/"
 event = "Lean Kanban"

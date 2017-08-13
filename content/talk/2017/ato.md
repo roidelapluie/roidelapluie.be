@@ -8,6 +8,7 @@ date = "2017-10-23T16:36:40+02:00"
 fuzzydate = true
 video = ""
 country = "USA"
+country_emoji = "us"
 
 +++
 

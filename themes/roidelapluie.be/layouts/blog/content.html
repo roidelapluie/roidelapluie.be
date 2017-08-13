@@ -1,11 +1,11 @@
-<h1 class="title mt-3 mb-3"><a href="{{.URL}}" class="text-gray-dark">
+<h1 class="title"><a href="{{.URL}}" class="text-gray-dark">
     {{.Title}}
 </a></h1>
 <div class="content text-justify">
     {{.Content}}
 </div>
-<div class="message mb-3">
-    <div class="bg-faded p-3 text-center">
+<div class="message">
+    <div class="message-body has-text-centered">
         <a href="{{.URL}}">Permalink</a>. Category: {{range $index, $element := .Params.categories}}{{if $index}} {{end}}{{$element}}{{end}}. Tags: {{range $index, $element := .Params.tags}}{{if $index}} {{end}}{{$element}}{{end}}.<br/>
         First published on {{.Date.Format "Mon 2 January 2006"}}.
     </div>

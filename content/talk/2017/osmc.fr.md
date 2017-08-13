@@ -4,6 +4,7 @@ event = "Open Source Monitoring Conference"
 slidesURL = ""
 city = "Nuremberg"
 country = "Allemagne"
+country_emoji = "de"
 fuzzydate = true
 title = "Prometheus Grafana et MySQL"
 video = ""

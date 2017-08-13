@@ -6,6 +6,7 @@ title = "Testing your puppet code"
 date = "2013-07-15"
 city = "Bruxelles"
 country = "Belgique"
+country_emoji = "belgium"
 eventURL = "http://2013.rmll.info/"
 
 +++

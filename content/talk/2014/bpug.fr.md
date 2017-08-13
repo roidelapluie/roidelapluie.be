@@ -7,6 +7,7 @@ title = "Augeas, swiss knife resources for your puppet tree"
 city = "Anvers"
 date = "2014-11-12"
 country = "Belgique"
+country_emoji = "belgium"
 
 +++
 

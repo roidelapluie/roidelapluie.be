@@ -7,6 +7,7 @@ slidesURL = "http://www.slideshare.net/roidelapluie/diving-into-puppet-providers
 title = "Diving into Puppet providers development"
 city = "Paris"
 country = "France"
+country_emoji = "fr"
 
 +++
 

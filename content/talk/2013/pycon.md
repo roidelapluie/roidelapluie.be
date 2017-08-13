@@ -6,6 +6,7 @@ slidesURL = "http://www.slideshare.net/roidelapluie/deployment-andcizope"
 title = "Deployment and Continuous Integration of a Zope/Plone application"
 city = "Strasbourg"
 country = "France"
+country_emoji = "fr"
 eventURL = "http://pycon.fr/"
 
 +++

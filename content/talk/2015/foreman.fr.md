@@ -6,7 +6,8 @@ video = "https://www.youtube.com/watch?v=8-o27p39dIM"
 slidesURL = ""
 title = "Inuits"
 city = ""
-country = "Belgique"
+country = "Online"
+country_emoji = "earth_africa"
 
 +++
 

@@ -4,6 +4,7 @@ event = "CodeMotion"
 slidesURL = ""
 city = "Berlin"
 country = "Germany"
+country_emoji = "de"
 fuzzydate = true
 title = "Vox Pupuli"
 video = ""

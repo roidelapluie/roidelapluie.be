@@ -1,6 +1,7 @@
 +++
 city = "Berlin"
 country = "Germany"
+country_emoji = "de"
 eventURL = "https://conf.systemd.io/"
 event = "systemd.conf"
 video = "https://www.youtube.com/watch?v=OhCTsMBHx3I"

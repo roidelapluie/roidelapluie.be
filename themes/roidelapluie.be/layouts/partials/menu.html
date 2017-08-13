@@ -1,20 +1,27 @@
-<div class="bg-primary"><nav class="navbar navbar-toggleable-md navbar-inverse bg-primary container">
-        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="navbar-brand mb-0">roidelapluie</div>
+<nav class="navbar is-info">
+    <div class="container">
+    <div class="navbar-brand">
+        <a class="navbar-item" href="/">
+            roidelapluie
+        </a>
+        <div class="navbar-burger" data-target="navMenu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </div>
+    <div class="navbar-menu" id="navMenu">
         {{ $currentPage := . }}
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <div class="navbar-nav mr-auto">
-                {{ range .Site.Menus.main }}
-                {{ if not (in $.Site.Data.misc.menu.excluded.excluded .Name) }}
-                <a class="nav-item nav-link {{ if or ($currentPage.IsMenuCurrent "main" .) ($currentPage.HasMenuCurrent "main" .) }} active{{ end }}" href="{{.URL}}">
+        <div class="navbar-start">
+            {{ range .Site.Menus.main }}
+            {{ if not (in $.Site.Data.misc.menu.excluded.excluded .Name) }}
+            <a class="navbar-item {{ if or ($currentPage.IsMenuCurrent "main" .) ($currentPage.HasMenuCurrent "main" .) }} is-active{{ end }}" href="{{.URL}}">
                         {{.Name}}
                     </a>
                 {{ end }}
                 {{ end }}
-            </div>
-            <div class="navbar-nav">
+        </div>
+        <div class="navbar-end">
                 {{ range .Site.Languages }}
                 {{ $.Scratch.Set "link" (printf "/%s" .Lang) }}
                     {{ $lang := .Lang }}
@@ -25,11 +32,11 @@
                             {{ end }}
                         {{end}}
                     {{end}}
-                    <a class="nav-item nav-link {{ if eq $currentPage.Lang .Lang }} active{{ end }}" href="{{$.Scratch.Get "link" }}">
+                    <a class="navbar-item {{ if eq $currentPage.Lang .Lang }} is-active{{ end }}" href="{{$.Scratch.Get "link" }}">
                         {{.Lang}}
                     </a>
                 {{end}}
-            </div>
         </div>
+    </div>
+    </div>
 </nav>
-</div>

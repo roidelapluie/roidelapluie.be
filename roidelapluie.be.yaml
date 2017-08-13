@@ -16,6 +16,7 @@ spec:
         ssl: 'no'
         repo: roidelapluie.be
     spec:
+      nodeName: aci-connector
       containers:
       - name: nginx
         image: nginx:alpine
@@ -30,6 +31,39 @@ spec:
         gitRepo:
           repository: "https://github.com/roidelapluie/roidelapluie.be-output"
           revision: "master"
+---
+apiVersion: apps/v1beta1
+kind: Deployment
+metadata:
+  name: roidelapluie-website-red
+  labels:
+    repo: roidelapluie.be
+spec:
+  replicas: 100
+  template:
+    metadata:
+      labels:
+        website: roidelapluie.be
+        app: nginx
+        version: '2'
+        ssl: 'no'
+        repo: roidelapluie.be
+    spec:
+      nodeName: aci-connector
+      containers:
+      - name: nginx
+        image: nginx:alpine
+        ports:
+        - containerPort: 80
+        volumeMounts:
+        - mountPath: /usr/share/nginx/html
+          name: git-repo
+          subPath: roidelapluie.be-output
+      volumes:
+      - name: git-repo
+        gitRepo:
+          repository: "https://github.com/roidelapluie/roidelapluie.be-output"
+          revision: "red"
 ---
 kind: Service
 apiVersion: v1
@@ -56,6 +90,8 @@ metadata:
   name: roidelapluie-website-nossl
   labels:
     repo: roidelapluie.be
+  annotations:
+    traefik.backend.loadbalancer.sticky: "false"
 spec:
   selector:
     website: roidelapluie.be

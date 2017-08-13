@@ -7,6 +7,7 @@ date = "2016-02-01"
 title = "Demystifying the Foreman"
 city = "Gand"
 country = "Belgique"
+country_emoji = "belgium"
 
 +++
 

@@ -1,5 +1,6 @@
 +++
 country = "Belgique"
+country_emoji = "belgium"
 date = "2013-10-31"
 eventURL = "http://journeeagile.be/"
 event = "La Journée Agile"
