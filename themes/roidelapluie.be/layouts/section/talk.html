@@ -3,18 +3,20 @@
     <div class="hero-body">
         <div class="container">
             <h1 class="title">
-                Blog
+                Talks
             </h1>
         </div>
     </div>
 </section>
 <section class="section">
 <div class="container">
-    {{range .Paginator.Pages}}
-        {{.Render "content"}}
-        <hr class="mb-4 mt-4"/>
+    <div class="columns is-multiline is-centered">
+{{ range (where (where .Site.Pages.ByWeight "Type" "talk") "IsNode" false)  }}
+    <div class="column is-3">
+        {{.Render "next"}}
+    </div>
     {{end}}
-    {{ partial "pagination.html" . }}
+    </div>
     </div>
 </section>
 {{ partial "footer.html" . }}

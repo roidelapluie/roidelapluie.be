@@ -1,7 +1,12 @@
 <div class="card bm--card-equal-height">
+    {{$filename := ".png" |add .File.TranslationBaseName}}
   <div class="card-image">
     <figure class="image is-2by1">
+    {{ if (where (readDir (.File.Dir | add "/content/")) "Name" $filename) }}
         <img src="{{ ".png" |add .File.TranslationBaseName|add "/" |add .File.Dir |add "/" | relURL}}" alt="Image">
+  {{else}}
+        <img src="{{ "/images/talk.png" | relURL}}" alt="Image">
+  {{end}}
     </figure>
   </div>
   <header class="card-header">
@@ -11,12 +16,15 @@
     {{- if .Params.eventurl}}</a>{{end }}
       </p>
       <span class="card-header-icon">
-      {{if .Params.country_emoji}}&nbsp;{{":" |add .Params.country_emoji|lower|add ":"|emojify}}{{else if .Params.country}}&nbsp;{{":" |add .Params.country|lower|add ":"|emojify}}{{end}}
+        {{- if .Params.slidesurl}} <a title="Slides" href="{{.Params.slidesurl}}">{{":blue_book:"|emojify}}</a>{{end }}
+{{if .Params.video}}<a title="Video" href="{{.Params.video}}">{{":video_camera:"|emojify}}</a>{{end -}}
       </span>
   </header>
 
   <div class="card-content has-text-centered">
-    {{.Title}}
+        {{- if .Params.slidesurl}} <a href="{{.Params.slidesurl}}">{{end }}
+    <em>{{.Title}}</em>
+        {{- if .Params.slidesurl}}</a>{{end }}
   </div>
   <footer class="card-footer">
     <span class="card-footer-item">
@@ -25,9 +33,11 @@
     {{else}}
     {{ i18n (.Date.Format "January") (.Date)}}
     {{end}}
+    {{ .Date.Format "2006" }}
     </span>
     <span class="card-footer-item">
         {{if .Params.city}}{{.Params.city}}{{end}}{{if .Params.city}}{{end}}
+      {{- if .Params.country_emoji}}&nbsp;{{":" |add .Params.country_emoji|lower|add ":"|emojify}}{{else if .Params.country}}&nbsp;{{":" |add .Params.country|lower|add ":"|emojify}}{{end}}
     </span>
   </footer>
 </div>
