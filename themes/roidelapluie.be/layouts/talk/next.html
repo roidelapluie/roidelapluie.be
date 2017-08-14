@@ -4,6 +4,8 @@
     <figure class="image is-2by1">
     {{ if (where (readDir (.File.Dir | add "/content/")) "Name" $filename) }}
         <img src="{{ ".png" |add .File.TranslationBaseName|add "/" |add .File.Dir |add "/" | relURL}}" alt="Image">
+    {{ else if (where (readDir "/content/talk/pics/") "Name" $filename) }}
+        <img src="{{ ".png" |add .File.TranslationBaseName|add "/talk/pics/" | relURL}}" alt="Image">
   {{else}}
         <img src="{{ "/images/talk.png" | relURL}}" alt="Image">
   {{end}}
