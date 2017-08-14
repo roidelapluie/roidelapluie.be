@@ -1,0 +1,46 @@
+<div class="card bm--card-equal-height">
+  <div class="card-image">
+    <figure class="image is-2by1">
+        <img src="{{ ".png" |add .File.TranslationBaseName|add "/" |add .File.Dir |add "/" | relURL}}" alt="Image">
+    </figure>
+  </div>
+  <header class="card-header">
+      <p class="card-header-title">
+    {{if .Params.eventurl}}<a href="{{.Params.eventurl}}">{{end -}}
+        {{- .Params.event -}}
+    {{- if .Params.eventurl}}</a>{{end }}
+      </p>
+      <span class="card-header-icon">
+      {{if .Params.country_emoji}}&nbsp;{{":" |add .Params.country_emoji|lower|add ":"|emojify}}{{else if .Params.country}}&nbsp;{{":" |add .Params.country|lower|add ":"|emojify}}{{end}}
+      </span>
+  </header>
+
+  <div class="card-content has-text-centered">
+    {{.Title}}
+  </div>
+  <footer class="card-footer">
+    <span class="card-footer-item">
+    {{if .Params.fuzzydate}}
+    {{ i18n (.Date.Format "January-fuzzy") (.Date)}}
+    {{else}}
+    {{ i18n (.Date.Format "January") (.Date)}}
+    {{end}}
+    </span>
+    <span class="card-footer-item">
+        {{if .Params.city}}{{.Params.city}}{{end}}{{if .Params.city}}{{end}}
+    </span>
+  </footer>
+</div>
+<!--
+<li>
+    {{if .Params.eventurl}}<a href="{{.Params.eventurl}}">{{end -}}
+        {{- .Params.event -}}
+    {{- if .Params.eventurl}}</a>{{end }},
+{{if .Params.city}}{{.Params.city}}{{end}}{{if .Params.country_emoji}}{{":" |add .Params.country_emoji|lower|add ":"|emojify}}{{else if .Params.country}} {{":" |add .Params.country|lower|add ":"|emojify}}{{end}}{{if .Params.city}}, {{end}}
+    <em>{{.Title}}</em>
+        {{- if .Params.slidesurl}} <a title="Slides" href="{{.Params.slidesurl}}">{{":blue_book:"|emojify}}</a>{{end }}
+{{if .Params.video}} <a title="Video" href="{{.Params.video}}">{{":video_camera:"|emojify}}</a>{{end -}}
+    {{if gt .Date.Unix now.Unix }}
+    {{ ":calendar:"|emojify }}
+    {{end}}
+</li> -->
