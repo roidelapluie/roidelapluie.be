@@ -13,6 +13,6 @@ before_install:
 - chmod 600 deploy_key
 - ssh-add deploy_key
 - travis_retry make install
-- travis_retry pip install Pygments
+- travis_retry sudo pip install Pygments
 script:
 - make deploy
