@@ -8,6 +8,11 @@ title = "Inuits"
 city = "Online"
 country = "Online"
 country_emoji = "earth_africa"
-
+[[with]]
+name = "Kris Buytaert"
+url = "http://www.krisbuytaert.be/"
+[[with]]
+name = "Daniel Lobato"
+url = "http://blog.daniellobato.me/"
 +++
 

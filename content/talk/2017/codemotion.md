@@ -5,10 +5,10 @@ slidesURL = "https://www.slideshare.net/roidelapluie/dont-be-the-bottleneck-of-y
 city = "Berlin"
 country = "Germany"
 country_emoji = "de"
-fuzzydate = true
+fuzzydate = false
 title = "Don't be the bottleneck!"
 video = ""
-date = "2017-10-12"
+date = "2017-10-13"
 
 +++
 

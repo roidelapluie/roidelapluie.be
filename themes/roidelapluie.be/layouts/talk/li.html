@@ -7,10 +7,24 @@
     {{if .Params.eventurl}}<a href="{{.Params.eventurl}}">{{end -}}
         {{- .Params.event -}}
     {{- if .Params.eventurl}}</a>{{end }},
-{{if .Params.city}}{{.Params.city}}{{end}}{{if .Params.country_emoji}}{{":" |add .Params.country_emoji|lower|add ":"|emojify}}{{else if .Params.country}} {{":" |add .Params.country|lower|add ":"|emojify}}{{end}}{{if .Params.city}}, {{end}}
+        {{if .Params.city}}{{.Params.city}}{{end}}{{if .Params.city}}{{end}}
+      {{- if .Params.country_emoji}}&nbsp;{{":" |add .Params.country_emoji|lower|add ":"|emojify}}{{else if .Params.country}}&nbsp;{{":" |add .Params.country|lower|add ":"|emojify}}{{end}},
         {{- if .Params.slidesurl}} <a href="{{.Params.slidesurl}}">{{end }}
     <em>{{.Title}}</em>
         {{- if .Params.slidesurl}}</a>{{end }}
+        {{- if .Params.with}}
+            (with
+            {{$len := (len .Params.with)}}
+            {{range $index, $element := .Params.with }}
+                <a href="{{$element.url}}">{{$element.name}}</a>
+                {{- if eq (add $index 1) $len -}}
+                {{else if eq (add $index 2) $len }}
+                and
+                {{ else }},
+                {{end}}
+            {{- end -}}
+            )
+        {{- end}}
         {{- if .Params.slidesurl}} <a title="Slides" href="{{.Params.slidesurl}}">{{":blue_book:"|emojify}}</a>{{end }}
 {{if .Params.video}} <a title="Video" href="{{.Params.video}}">{{":video_camera:"|emojify}}</a>{{end -}}
     {{if gt .Date.Unix now.Unix }}
