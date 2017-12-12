@@ -2,7 +2,7 @@
 country = "Belgique"
 country_emoji = "belgium"
 date = "2015-01-30"
-eventURL = "http://wiki.centos.org/Events/Dojo/Bruxelles2015"
+eventURL = "http://wiki.centos.org/Events/Dojo/Brussels2015"
 event = "CentOS DoJo"
 video = "https://www.youtube.com/watch?v=IkhCvNXWMC4"
 slidesURL = "http://www.slideshare.net/roidelapluie/an-introduction-to-the-pulp-project"
