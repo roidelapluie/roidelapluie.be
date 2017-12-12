@@ -1,4 +1,5 @@
 +++
+fuzzydate = true
 eventURL = "http://cfgmgmtcamp.eu/"
 event = "Config Management Camp"
 video = ""
