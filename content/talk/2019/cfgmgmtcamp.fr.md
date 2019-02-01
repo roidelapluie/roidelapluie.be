@@ -1,12 +1,11 @@
 +++
-fuzzydate = true
 eventURL = "http://cfgmgmtcamp.eu/"
 event = "Config Management Camp"
 video = ""
-slidesURL ="https://www.slideshare.net/roidelapluie/jsonnet"
-title = "Ignite à propos de jsonnet"
+slidesURL = ""
+title = "Incident Resolution as Code"
 city = "Gand"
-date = "2018-02-06"
+date = "2019-02-04"
 country = "Belgique"
 country_emoji = "belgium"
 
