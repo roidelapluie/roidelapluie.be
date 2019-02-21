@@ -1,4 +1,4 @@
-HUGO_VERSION ?= 0.25.1
+HUGO_VERSION ?= 0.54.0
 HUGO ?= ./hugo
 JQUERY_VERSION ?= 3.1.1
 VIS_VERSION ?= 4.19.1
@@ -6,7 +6,7 @@ VIS_VERSION ?= 4.19.1
 all: compile adapt-rss
 
 compile:
-	$(HUGO) -t roidelapluie.be
+	$(HUGO) -F -t roidelapluie.be
 
 adapt-rss:
 	./adapt-rss.sh
