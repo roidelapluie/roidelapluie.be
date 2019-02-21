@@ -52,7 +52,7 @@ We use an alternative approach, which is to record the last known value:
   expr: available_sms or available_sms_last
 - alert: No more SMS
   expr: |
-    available_sms < 1000
+    available_sms_last < 1000
 - alert: No more SMS balance
   expr: |
     absent(available_sms)
