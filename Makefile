@@ -40,5 +40,5 @@ deploy: clean all
 		git push -f git@github.com:roidelapluie/roidelapluie.be-output.git master
 	cd public && \
 		rm -rf .git && \
-		scp -o UserKnownHostsFile=../keys -i deploy_key -r . travis@62.210.189.165:roidelapluie.be/
+		echo 'put -r .'|sftp -o UserKnownHostsFile=../keys -i deploy_key travis@62.210.189.165:roidelapluie.be/
 
