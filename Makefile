@@ -32,13 +32,4 @@ clean:
 	rm -rf public
 
 deploy: clean all
-	find public -name .gitignore -delete
-	cd public && \
-		git init . && \
-		git add . && \
-		git commit -m 'Automated Build' && \
-		git push -f git@github.com:roidelapluie/roidelapluie.be-output.git master
-	cd public && \
-		rm -rf .git && \
-		echo 'put -r .'|sftp -o UserKnownHostsFile=../keys -i deploy_key travis@62.210.189.165:roidelapluie.be/
-
+	./deploy.sh
