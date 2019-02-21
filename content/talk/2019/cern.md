@@ -5,8 +5,8 @@ title = "Monitor your CentOS stack with Prometheus"
 city = "Geneva"
 country = "Switzerland"
 date = "2019-02-20"
-eventURL = "https://indico.cern.ch/event/799600/"
-event = "CERN"
+eventURL = "http://cseminar.web.cern.ch/cseminar/"
+event = "CERN Computing Seminars"
 
 +++
 
