@@ -1,6 +1,6 @@
 +++
 video = ""
-slidesURL = ""
+slidesURL = "https://www.slideshare.net/roidelapluie/monitoring-as-an-entry-point-for-collaboration"
 title = "Monitoring as an entry point for collaboration"
 city = "Geneva"
 country = "Switzerland"
