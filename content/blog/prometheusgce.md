@@ -70,6 +70,8 @@ address to scrape.
         replacement: "${1}:9090"
 ```
 
+#### Zones and project
+
 Now, let's get automatically a zone label, which will match the gce zone:
 
 ```
@@ -85,12 +87,16 @@ Let's get a project label, too:
         target_label: project
 ```
 
+#### Instance name
+
 And a human readable instance name, that will match gce instance name:
 
 ```
       - source_labels: [__meta_gce_instance_name]
         target_label: instance
 ```
+
+#### Metadata
 
 The last part of the config will make every metadata of the instance a label in
 prometheus:
