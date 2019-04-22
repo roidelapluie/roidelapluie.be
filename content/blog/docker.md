@@ -4,7 +4,7 @@ date = 2019-04-22T23:32:47+02:00
 lang = "en"
 categories = ["cloud"]
 tags = ["gcp", "docker"]
-slug = "docker"
+slug = "docker-gcp-terraform"
 
 +++
 
@@ -45,6 +45,10 @@ as image to get your tagged image in your pods, and get predictable container
 image update!
 
 Your service account must have storage read access.
+
+The round-trip between `google_container_registry_image` and
+`docker_registry_image` enables the fetch of the exact checksum of the tagged
+version.
 
 Note: this example is not complete (I did not include vars and google provider
 auth).
