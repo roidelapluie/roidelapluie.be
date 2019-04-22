@@ -42,7 +42,8 @@ data "google_container_registry_image" "myapp" {
 
 Now you can use: `${data.google_container_registry_image.myapp.image_url}` in
 as image to get your tagged image in your pods, and get predictable container
-image update!
+image update! That URL will be scope as needed (gcr.io/projectname/imagename...)
+and is ready to use in your pods definition.
 
 Your service account must have storage read access.
 
