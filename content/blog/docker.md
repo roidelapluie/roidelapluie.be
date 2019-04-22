@@ -9,7 +9,7 @@ slug = "docker-gcp-terraform"
 +++
 
 Here are some snippets you can use to get the terraform docker provider to work
-with terraform:
+with the google container registry gcr.io:
 
 ```hcl
 # Your config
