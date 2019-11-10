@@ -1,7 +1,7 @@
 +++
 eventURL = "https://osdc.de/"
 event = "Open Source Data Center Conference"
-slidesURL = ""
+slidesURL = "https://www.slideshare.net/roidelapluie/single-sign-on-with-keycloak"
 city = "Berlin"
 country = "Allemagne"
 country_emoji = "de"

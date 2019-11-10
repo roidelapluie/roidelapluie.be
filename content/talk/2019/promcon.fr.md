@@ -1,7 +1,7 @@
 +++
 fuzzydate = false
 event = "PromCon"
-date = "2018-11-08T08:40:53+02:00"
+date = "2019-11-08T08:40:53+02:00"
 city = "Munich"
 country = "Allemagne"
 country_emoji = "de"
