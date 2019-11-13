@@ -7,7 +7,7 @@ country = "The Netherlands"
 country_emoji = "netherlands"
 eventURL = "https://www.haproxyconf.com"
 title = "HAProxy as Egress Controller"
-slidesURL = ""
+slidesURL = "https://www.slideshare.net/roidelapluie/haproxy-as-egress-controller"
 
 +++
 
