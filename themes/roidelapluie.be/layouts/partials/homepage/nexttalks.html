@@ -22,3 +22,23 @@
     </div>
 </section>
 {{end}}
+{{ if lt ($.Scratch.Get "NEXT") 1 }}
+<section class="section">
+    <div class="container">
+        <h1 class="title">Last talks</h1>
+        <div class="columns is-multiline is-centered">
+            {{ $.Scratch.Set "published" 0 }}
+            {{ range (sort (where (where .Site.Pages.ByWeight "Type" "talk") "IsNode" false) "Date").Reverse }}
+            {{if le .Date.Unix now.Unix }}
+            {{ if lt ($.Scratch.Get "published") 4 }}
+            {{ $.Scratch.Add "published" 1 }}
+            <div class="column is-3">
+                {{.Render "next"}}
+            </div>
+            {{end}}
+            {{end}}
+            {{end}}
+        </div>
+    </div>
+</section>
+{{ end }}
