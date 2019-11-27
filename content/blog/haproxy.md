@@ -1,5 +1,5 @@
 +++
-title = "Goodbye haproxy_exporter"
+title = "A look at HAProxy native Prometheus metrics"
 date = 2019-11-27T10:00:00+01:00
 lang = "en"
 categories = ["prometheus"]
@@ -9,7 +9,7 @@ slug = "haproxy-prometheus"
 +++
 
 [HAProxy 2.0](https://www.haproxy.org) contains, among other improvements, the
-ability to expose prometheus metrics natively.
+ability to expose Prometheus metrics natively.
 
 As I am building [HAProxy 2.0 and 2.1
 rpm's](https://copr.fedorainfracloud.org/coprs/roidelapluie/haproxy/builds/), I
@@ -17,7 +17,7 @@ wanted to try it out and move away from the [haproxy_exporter](https://github.co
 
 While the haproxy\_exporter is developed by the Prometheus team, and therefore a
 high quality exporter, there is good reasons to move to the HAProxy native
-prometheus exporter:
+Prometheus exporter:
 
 - Performance
 - New metrics
@@ -228,3 +228,5 @@ metrics!
 I was positively surprised to see that most of the metrics were still there, and
 that we have access to a lot of new metrics! This is really a big step for
 HAProxy monitoring.
+
+Goodbye haproxy_exporter and thanks for all the fish!
