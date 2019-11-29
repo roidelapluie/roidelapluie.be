@@ -5,10 +5,9 @@ slidesURL = "https://www.slideshare.net/roidelapluie/single-sign-on-with-keycloa
 city = "Berlin"
 country = "Allemagne"
 country_emoji = "de"
-fuzzydate = true
 title = "Single Sign On with Keycloak: why and how"
 video = ""
-date = "2019-05-18"
+date = "2019-05-14"
 
 +++
 

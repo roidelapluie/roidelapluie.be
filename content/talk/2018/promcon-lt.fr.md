@@ -1,5 +1,4 @@
 +++
-fuzzydate = true
 event = "PromCon"
 date = "2018-08-09T08:41:53+02:00"
 city = "Munich"
