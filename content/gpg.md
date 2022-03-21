@@ -7,22 +7,21 @@ type = "page"
     parent = "homepage"
 +++
 
-If you want to send me a mail, you can use my public PGP key: [0C7F187769D072B93B642BB9E484250533AE92DA](http://roidelapluie.be/gpg/0C7F187769D072B93B642BB9E484250533AE92DA.pub).
+If you want to send me a mail, you can use my public PGP key: [265C9E57099332A64A4A2B9B14C5389108FFB12C](http://roidelapluie.be/gpg/265C9E57099332A64A4A2B9B14C5389108FFB12C.pub).
 
 My preferred email address is [roidelapluie@inuits.eu](mailto:roidelapluie@inuits.eu).
 
 ```text
-pub   rsa4096 2014-12-11 [CE] [expires: 2021-05-10]
-      0C7F187769D072B93B642BB9E484250533AE92DA
-uid           [ultimate] Julien Pivotto (roidelapluie)
-<roidelapluie@prometheus.io>
-uid           [ultimate] Julien Pivotto (Private) <roidelapluie@roidelapluie.be>
+pub   ed25519 2022-02-10 [SC] [expires: 2023-02-10]
+      265C9E57099332A64A4A2B9B14C5389108FFB12C
+uid           [ultimate] Julien Pivotto (roidelapluie) <roidelapluie@o11y.eu>
 uid           [ultimate] Julien Pivotto <julien@inuits.eu>
 uid           [ultimate] Julien Pivotto (roidelapluie) <roidelapluie@inuits.eu>
-uid           [ultimate] Julien Pivotto <roidelapluie@gmail.com>
-uid           [ultimate] [jpeg image of size 4061]
-sub   ed25519 2019-01-05 [S] [expires: 2021-05-10]
-sub   cv25519 2019-01-05 [E] [expires: 2021-05-10]
+uid           [ultimate] Julien Pivotto (roidelapluie) <roidelapluie@prometheus.io>
+uid           [ultimate] Julien Pivotto <roidelapluie@roidelapluie.be>
+uid           [ultimate] Julien Pivotto (roidelapluie) <roidelapluie@gmail.com>
+sub   ed25519 2022-02-10 [A] [expires: 2023-02-10]
+sub   cv25519 2022-02-10 [E] [expires: 2023-02-10]
 ```
 
 
