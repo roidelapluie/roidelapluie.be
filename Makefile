@@ -2,11 +2,12 @@ HUGO_VERSION ?= 0.104.3
 HUGO ?= ./hugo
 JQUERY_VERSION ?= 3.1.1
 VIS_VERSION ?= 4.19.1
+BASEURL ?= https://roidelapluie.be
 
 all: compile adapt-rss
 
 compile:
-	$(HUGO) -F -t roidelapluie.be
+	$(HUGO) -F --baseURL "$(BASEURL)/"
 
 adapt-rss:
 	./adapt-rss.sh
