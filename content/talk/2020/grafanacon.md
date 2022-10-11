@@ -7,6 +7,7 @@ title = "Powerful graph representations in Grafana"
 city = "Online"
 date = "2020-05-21"
 country = "Online"
+country_emoji = "earth_africa"
 
 +++
 
