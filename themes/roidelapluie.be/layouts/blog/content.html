@@ -1,4 +1,4 @@
-<h1 class="title"><a href="{{.URL}}" class="text-gray-dark">
+<h1 class="title"><a href="{{.Permalink}}" class="text-gray-dark">
     {{.Title}}
 </a></h1>
 <div class="content text-justify">
@@ -6,7 +6,7 @@
 </div>
 <div class="message">
     <div class="message-body has-text-centered">
-        <a href="{{.URL}}">Permalink</a>. Category: {{range $index, $element := .Params.categories}}{{if $index}} {{end}}{{$element}}{{end}}. Tags: {{range $index, $element := .Params.tags}}{{if $index}} {{end}}{{$element}}{{end}}.<br/>
+        <a href="{{.Permalink}}">Permalink</a>. Category: {{range $index, $element := .Params.categories}}{{if $index}} {{end}}{{$element}}{{end}}. Tags: {{range $index, $element := .Params.tags}}{{if $index}} {{end}}{{$element}}{{end}}.<br/>
         First published on {{.Date.Format "Mon 2 January 2006"}}.
     </div>
 </div>

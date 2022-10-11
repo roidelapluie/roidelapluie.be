@@ -1,4 +1,5 @@
-#!/bin/bash -xe
+#!/usr/bin/env bash
+set -xe
 
 mkdir -p public/feeds
 for i in public/tags/*/*.xml; do cp $i $(echo $i|sed -e s@public/tags@public/feeds@ -e s@/rss.xml@.tag.rss.xml@); done
