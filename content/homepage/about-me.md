@@ -6,8 +6,6 @@ weight = 1
 
 +++
 
-Julien Pivotto is maintaining the Prometheus server, a cloud-native open source
-monitoring solution. His area of work is Open Source Observability, helping
-customers understanding the behaviour of their applications and services. He
-co-founded O11y, which provides support and services around Prometheus.
-
+Julien Pivotto is a maintainer of Prometheus, the open source metrics monitoring
+solution. He works at O11y where he supports organizations that use Open Source
+observability tools.
