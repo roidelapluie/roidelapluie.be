@@ -29,7 +29,7 @@
         {{- end}}
         {{- if .Params.slidesurl}} <a title="Slides" href="{{.Params.slidesurl}}">{{":blue_book:"|emojify}}</a>{{end }}
 {{if .Params.video}} <a title="Video" href="{{.Params.video}}">{{":video_camera:"|emojify}}</a>{{end -}}
-{{if .Params.podcast}} <a title="Podcast" href="{{.Params.podcast}}">{{":studio_microphone:"|emojify}}</a>{{end -}}
+{{if .Params.podcast}} <a title="Podcast" href="{{.Params.podcast}}">{{":sound:"|emojify}}</a>{{end -}}
     {{if gt .Date.Unix now.Unix }}
     {{ ":calendar:"|emojify }}
     {{end}}

@@ -6,8 +6,8 @@ podcast = "https://www.emilyomier.com/podcast/positioning-open-source-prometheus
 title = "Positioning Open Source: Prometheus"
 city = "Podcast"
 date = "2021-04-07"
-country = "Online"
-country_emoji = "earth_africa"
+country = "Podcast"
+country_emoji = "studio_microphone"
 [[with]]
 name = "Emily Omier"
 url = "https://www.emilyomier.com/"

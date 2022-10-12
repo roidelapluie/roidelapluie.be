@@ -6,8 +6,8 @@ podcast = "https://podcasts.audiomeans.fr/electro-monkeys-0c9902cdaea8/prometheu
 title = "Prometheus avec Julien Pivotto"
 city = "Podcast"
 date = "2020-06-24"
-country = "Online"
-country_emoji = "earth_africa"
+country = "Podcast"
+country_emoji = "studio_microphone"
 [[with]]
 name = "Stéphane Beuret"
 url = "https://twitter.com/Saphoooo"
