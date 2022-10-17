@@ -6,6 +6,7 @@ weight = 1
 
 +++
 
-Julien Pivotto is a maintainer of Prometheus, the open source metrics monitoring
-solution. He works at O11y where he supports organizations that use Open Source
-observability tools.
+Julien Pivotto is a maintainer of Prometheus, the Open Source monitoring and
+alerting solution. He is the co-founder of the company O11y, that provides
+premium support for Open Source observability tools such as Prometheus, Thanos,
+Grafana, etc.
