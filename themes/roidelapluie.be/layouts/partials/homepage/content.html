@@ -1,14 +1,22 @@
 <section class="hero is-primary">
     <div class="hero-body">
         <div class="container">
-            <h1 class="title">
-                {{.Title}}
-            </h1>
-            <h2 class="subtitle">
-        {{range (where (where .Site.Pages.ByWeight "Type" "homepage") ".Params.location" "main") }}
-            {{.Render "main"}}
-        {{end}}
-            </h2>
+            <div class="columns">
+                <div class="column">
+                        <h1 class="title" style="margin-bottom: 1em;">
+                            {{.Title}}
+                        </h1>
+
+                        {{range (where (where .Site.Pages.ByWeight "Type" "homepage") ".Params.location" "main") }}
+                        <h2 class="subtitle">
+                            {{.Render "main"}}
+                        </h2>
+                        {{end}}
+                </div>
+                <div class="column is-one-quarter has-text-right-desktop has-text-centered-touch">
+                    <a href="https://www.oreilly.com/library/view/prometheus-up/9781098131135/"><img src="/images/book.jpeg" alt="Prometheus: Up & Running, 2nd Edition"/></a>
+                </div>
+            </div>
         </div>
     </div>
 </section>
