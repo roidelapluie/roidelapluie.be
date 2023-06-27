@@ -7,7 +7,8 @@ country = "Germany"
 country_emoji = "de"
 eventURL = "https://osmc.de/"
 title = "What's new in the Prometheus ecosystem"
-slidesURL = ""
+video = "https://www.youtube.com/watch?v=ucuX1cZspLQ"
+slidesURL = "https://www.slideshare.net/NETWAYS/osmc-2022-whats-new-in-the-prometheus-ecosystem-by-julien-pivotto"
 
 +++
 
