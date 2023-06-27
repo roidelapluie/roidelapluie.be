@@ -6,9 +6,8 @@ weight = 2
 
 +++
 
-Currently, Julien is putting his expertise to work on the second edition of the
-book "Prometheus Up and Running", published by O'Reilly. With his
-extensive knowledge and experience in the field, he is sure to provide readers
-with invaluable insights and practical advice on how to make the most of
-Prometheus and take their monitoring and alerting capabilities to the next
-level.
+Julien is leveraging his in-depth expertise in the latest edition of the book
+"Prometheus Up and Running", published by O'Reilly. With his comprehensive
+knowledge and hands-on experience in the field, he delivers invaluable insights
+and practical advice, empowering readers to maximize Prometheus and elevate
+their monitoring and alerting capabilities to the next level.
